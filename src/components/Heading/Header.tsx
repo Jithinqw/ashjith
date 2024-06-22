@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { cmsContent } from "../../cms/index";
 import "./Heading.css";
 import 'papperanimate';
 
 export const Header = () => {
-  const [mobileViewMenu, setMobileViewMenu] = React.useState(false);
+  const names = ['AJ', 'JA'];
+  const [mobileViewMenu, setMobileViewMenu] = React.useState<boolean>(false);
+  const [nameRef, setNameRef] = React.useState<string>('AJ');
 
   const setMenuStatus = () => {
     setMobileViewMenu(!mobileViewMenu);
   };
+
+  useEffect(() => {
+    setNameRef(names[Math.floor(Math.random()*names.length)]);
+  },[]);
 
   return (
     <div>
@@ -17,7 +23,7 @@ export const Header = () => {
           <div>
             <a href="/" className="flex">
               <span className="sr-only">AshJith</span>
-              <p className="rye-regular papperanimate_animated papperanimate_rubberBand">AJ</p>
+              <p className="rye-regular papperanimate_animated papperanimate_rubberBand">{nameRef}</p>
             </a>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
@@ -72,7 +78,7 @@ export const Header = () => {
             <div className="px-5 pt-5 pb-6 sm:pb-8">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="rye-regular papperanimate_animated papperanimate_pulse">AJ</p>
+                  <p className="rye-regular papperanimate_animated papperanimate_pulse">{nameRef}</p>
                 </div>
                 <div className="-mr-2">
                   <button
