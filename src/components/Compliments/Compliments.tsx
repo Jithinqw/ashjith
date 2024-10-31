@@ -8,7 +8,7 @@ interface IRatedCompliments {
 }
 export const Compliments = (props: IRatedCompliments) => {
   return (
-    <div>
+    <div className="mb-4">
       <div className="text-center">
         <h1 className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
           <span

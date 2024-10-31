@@ -91,7 +91,14 @@ export const cmsContent = {
         { displayName: "Web", link: "https://jithinqw.github.io/" },
       ],
     },
-    ourstory: {},
+    ourstory: {
+      mainCta: "How it all started",
+      mainDescription: "Gather around website visitors young, middle-aged, and old! Listen to my tale of finding love.",
+      mainDescriptionLongText: "Let us rewind the clock of time to August 2023, a more turbulent era Covid 19 was wrapping up. Jithin was figuring out on moving on to a new country, Ashley was busy between her lectures.",
+      lowDeckDescriptionText: "Jithin and Ashley met online and started talking. We both talked and talked, till we fell in love. By this time, Jithin and Ashley met, travelling thousands of miles. Through it all, their commitment to each other, their love of food, and movies helped them navigate the bumps along the road to where they are now. Now, of course, is engaged to be married.  We are excited to invite you to celebrate our journey.",
+      inviteHeading: "Thanks",
+      inviteDescription: "We thank God, all the humans and stars that aligned to bring us together. We are inviting you to the beautiful village of Thevelakkara, were we are getting married."
+    },
     venue: {
       homePageBadgeCta: "Navigate to Maps",
       venueHeads: [
@@ -433,34 +440,6 @@ export const cmsContent = {
       wisherName: "Jithin",
       wisherRole: "",
       wisherRelation: "Me",
-    },
-    {
-      mainText: "Best Wishes",
-      wisherName: "Jithin",
-      wisherRole: "",
-      wisherRelation: "Me",
-      wisherImg: "",
-    },
-    {
-      mainText: "Best Wishes",
-      wisherName: "Jithin",
-      wisherRole: "",
-      wisherRelation: "Me",
-      wisherImg: "",
-    },
-    {
-      mainText: "Best Wishes",
-      wisherName: "Jithin",
-      wisherRole: "",
-      wisherRelation: "Me",
-      wisherImg: "",
-    },
-    {
-      mainText: "Best Wishes",
-      wisherName: "Jithin",
-      wisherRole: "",
-      wisherRelation: "Me",
-      wisherImg: "",
     },
   ],
 };
