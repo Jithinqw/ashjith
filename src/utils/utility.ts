@@ -150,6 +150,7 @@ export default class Utils {
     }
   }
 
+  
   static escapeRegEx = (fullText: string) => {
     const escapeRE = new RegExp(/([.*+?^=!:$(){}|[\]\/\\])/g)
     return fullText.replace(escapeRE, "\\$1")
