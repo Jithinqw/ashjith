@@ -7,12 +7,6 @@ import { InviteHero } from "../../components/InviteHero/InviteHero";
 const Main = () => {
   useEffect(() => {
     Utils.setPageTitle("Jithin & Ashley - Home");
-    if (cmsContent.config.isPagesDisabled) {
-      Utils.diablePageLoad(
-        cmsContent.config.isPagesDisabled,
-        cmsContent.config.defaultRedirectUrl
-      );
-    }
   }, []);
 
   return (
