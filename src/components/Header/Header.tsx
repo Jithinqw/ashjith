@@ -1,29 +1,41 @@
 import React, { useEffect } from "react";
 import { cmsContent } from "../../cms/index";
 import "./Heading.css";
-import 'papperanimate';
+import Utils from "../../utils/utility";
 
-export const Header = () => {
-  const names = ['AJ', 'JA'];
+export interface IHeaderProps {
+  colorDrop?: string;
+}
+
+export const Header = (props: IHeaderProps) => {
+  const names = ["AJ", "JA"];
   const [mobileViewMenu, setMobileViewMenu] = React.useState<boolean>(false);
-  const [nameRef, setNameRef] = React.useState<string>('AJ');
-
+  const [nameRef, setNameRef] = React.useState<string>("AJ");
   const setMenuStatus = () => {
     setMobileViewMenu(!mobileViewMenu);
   };
 
   useEffect(() => {
-    setNameRef(names[Math.floor(Math.random()*names.length)]);
-  },[]);
+    setNameRef(names[Math.floor(Math.random() * names.length)]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const appUrlRedirect = (pageUrl: string) => {
+    return Utils.appendInviteHash(pageUrl);
+  };
 
   return (
-    <div>
+    <div
+      style={{
+        backgroundColor: `${props.colorDrop ? props.colorDrop : ""}`,
+      }}
+    >
       <div className="relative z-20">
         <div className="flex items-center justify-between px-4 py-5 mx-auto max-w-7xl sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10">
           <div>
-            <a href="/" className="flex">
+            <a href="/" className="flex text-black">
               <span className="sr-only">AshJith</span>
-              <p className="rye-regular papperanimate_animated papperanimate_rubberBand">{nameRef}</p>
+              <p className="rye-regular">{nameRef}</p>
             </a>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
@@ -60,9 +72,9 @@ export const Header = () => {
                 cmsContent.heading.headingPages.map((e, i) => {
                   return (
                     <a
-                      href={e.source}
+                      href={appUrlRedirect(e.source)}
                       key={i}
-                      className="text-base font-medium text-gray-500 hover:text-gray-900"
+                      className="text-base font-medium hover:text-black"
                     >
                       {e.headingTitle}
                     </a>
@@ -78,7 +90,9 @@ export const Header = () => {
             <div className="px-5 pt-5 pb-6 sm:pb-8">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="rye-regular papperanimate_animated papperanimate_pulse">{nameRef}</p>
+                  <p className="rye-regular papperanimate_animated papperanimate_pulse">
+                    {nameRef}
+                  </p>
                 </div>
                 <div className="-mr-2">
                   <button
@@ -109,15 +123,17 @@ export const Header = () => {
             </div>
             <div className="px-5 py-6">
               <div className="grid grid-cols-2 gap-4">
-                {cmsContent && cmsContent.heading &&
-                    cmsContent.heading.headingPages &&
-                    cmsContent.heading.headingPages.length > 0 &&
-                    cmsContent.heading.headingPages.map((e, i) => {
+                {cmsContent &&
+                  cmsContent.heading &&
+                  cmsContent.heading.headingPages &&
+                  cmsContent.heading.headingPages.length > 0 &&
+                  cmsContent.heading.headingPages.map((e, i) => {
                     return (
                       <a
-                        href={e.source}
+                        href={appUrlRedirect(e.source)}
                         key={i}
-                        className="text-base font-medium text-gray-500 hover:text-gray-900">
+                        className="text-base font-medium text-black hover:text-black"
+                      >
                         {e.headingTitle}
                       </a>
                     );
@@ -125,16 +141,15 @@ export const Header = () => {
               </div>
               <div className="mt-6">
                 <a
-                  href="/"
+                  href={appUrlRedirect("/")}
                   className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-cloud-burst-600 hover:bg-primary-700"
                 >
-                  Get started
                   <span className="logo-full"></span>
                 </a>
                 <p className="mt-6 text-base font-medium text-center text-gray-500">
                   <a
                     className="text-primary-600 hover:text-primary-500"
-                    href="/validate"
+                    href={appUrlRedirect("/about")}
                   >
                     About this website
                   </a>
