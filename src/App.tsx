@@ -9,6 +9,7 @@ import About from "./pages/about/about";
 import Main from "./pages/home/main";
 import NotFound from "./pages/notFound/notFound";
 
+
 function App() {
   return (
     <BrowserRouter>
