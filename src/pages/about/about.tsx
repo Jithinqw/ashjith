@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { cmsContent } from "../../cms";
 import { Header } from "../../components/Header/Header";
 import Utils from "../../utils/utility";
+import { Loader } from "../../components/Loader/Loader";
 
 const About = () => {
   const [cta, setCta] = useState<string>(cmsContent.pages.about.tentativeCta);
@@ -63,14 +64,16 @@ const About = () => {
             {cmsContent.pages.about &&
               cmsContent.pages.about.madeWith.techStack.map((e, i) => {
                 return (
-                  <img
-                    className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 hover:animate-spin"
-                    src={e.url}
-                    alt={e.alt}
-                    width="158"
-                    height="48"
-                    key={i}
-                  />
+                  <Suspense fallback={<Loader />}>
+                    <img
+                      className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 hover:animate-spin"
+                      src={e.url}
+                      alt={e.alt}
+                      width="158"
+                      height="48"
+                      key={i}
+                    />
+                  </Suspense>
                 );
               })}
           </div>

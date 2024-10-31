@@ -1,5 +1,7 @@
+import { Suspense } from "react";
 import { cmsContent } from "../../cms";
 import { ICompliments } from "../../utils/constants";
+import { Loader } from "../Loader/Loader";
 
 interface IRatedCompliments {
   wishes: Array<ICompliments>;
@@ -39,13 +41,15 @@ export const Compliments = (props: IRatedCompliments) => {
                   }}
                   key={i}
                 >
-                  <img
-                    className="mb-10 w-auto"
-                    src={e.wisherImg}
-                    decoding={"async"}
-                    style={{ color: "transparent" }}
-                    height={"8"}
-                  />
+                  <Suspense fallback={<Loader />}>
+                    <img
+                      className="mb-10 w-auto"
+                      src={e.wisherImg}
+                      decoding={"async"}
+                      style={{ color: "transparent" }}
+                      height={"8"}
+                    />
+                  </Suspense>
                   <figure className="flex w-full flex-col items-start p-8">
                     <blockquote className="mt-auto text-xl font-book text-gray-950">
                       <p className="relative before:absolute before:right-full before:top-0">

@@ -3,6 +3,7 @@ import { cmsContent } from "../../cms";
 import Utils from "../../utils/utility";
 import { alphaTestFlag } from "../../utils/constants";
 import { DateAnnocement } from "../DateAnnoncement/DateAnnocement";
+import { Loader } from "../Loader/Loader";
 
 export const InviteHero = () => {
   const isDateAnnoncementEnabled =
@@ -77,7 +78,7 @@ export const InviteHero = () => {
               )}
             </div>
           </div>
-          <Suspense fallback={<p>Image is loading...</p>}>
+          <Suspense fallback={<Loader />}>
             <img
               src={Utils.getUrl(
                 cmsContent.pages.invite.InviteHeroSection.heroImage

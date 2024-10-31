@@ -1,5 +1,6 @@
-import { useEffect } from "react";
+import { Suspense, useEffect } from "react";
 import Utils from "../../../utils/utility";
+import { Loader } from "../../Loader/Loader";
 
 export interface IReels {
   onClick: () => void;
@@ -48,16 +49,20 @@ export const Reels = (props: IReels) => {
       {/* Reel Head */}
       <div className="flex justify-between">
         <div className="flex flex-row">
-          <img
-            src={Utils.getUrl('ashjithlogo.png')}
-            className="rounded-full h-8 w-8 m-2"
-          />
+          <Suspense fallback={<Loader />}>
+            <img
+              src={Utils.getUrl("ashjithlogo.png")}
+              className="rounded-full h-8 w-8 m-2"
+            />
+          </Suspense>
           <span className="font-semibold text-white mt-2 ml-1">asdasd</span>
         </div>
       </div>
       {/* main content */}
       <div className="flex h-[700px] w-[350px]">
-        <img src={Utils.getUrl('bg.png')} />
+        <Suspense fallback={<Loader />}>
+          <img src={Utils.getUrl("bg.png")} />
+        </Suspense>
       </div>
     </div>
   );

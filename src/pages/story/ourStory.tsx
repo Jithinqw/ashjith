@@ -6,6 +6,7 @@ import { eInviteRecord, IInvite } from "../../utils/constants";
 import { Modal } from "../../components/Modal/Modal";
 import { cmsContent } from "../../cms";
 import { Compliments } from "../../components/Compliments/Compliments";
+import { Loader } from "../../components/Loader/Loader";
 
 const OurStory = () => {
   const [searchParams] = useSearchParams();
@@ -107,12 +108,14 @@ const OurStory = () => {
                   </div>
                 </div>
                 <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-                  <Suspense fallback={<p>Image is loading....</p>}>
-                  <img
-                    className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
-                    src={Utils.getUrl(cmsContent.pages.invite.InviteHeroSection.heroImage)}
-                    alt=""
-                  />
+                  <Suspense fallback={<Loader />}>
+                    <img
+                      className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+                      src={Utils.getUrl(
+                        cmsContent.pages.invite.InviteHeroSection.heroImage
+                      )}
+                      alt=""
+                    />
                   </Suspense>
                 </div>
                 <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">

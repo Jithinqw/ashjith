@@ -1,4 +1,6 @@
+import { Suspense } from "react";
 import { cmsContent } from "../../cms";
+import { Loader } from "../Loader/Loader";
 
 export interface IListItem {
   title: string;
@@ -16,13 +18,15 @@ export default function ListItem(props: IListItem) {
   };
   return (
     <article className="flex items-start space-x-6 p-6">
-      <img
-        src={props.image}
-        alt=""
-        width="60"
-        height="88"
-        className="flex-none rounded-md bg-slate-100"
-      />
+      <Suspense fallback={<Loader />}>
+        <img
+          src={props.image}
+          alt=""
+          width="60"
+          height="88"
+          className="flex-none rounded-md bg-slate-100"
+        />
+      </Suspense>
       <div className="min-w-0 relative flex-auto">
         <h2 className="font-semibold text-slate-900 truncate pr-20">
           {props.title}

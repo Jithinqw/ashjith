@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { cmsContent } from "../../cms";
 import { Header } from "../../components/Header/Header";
 import Utils from "../../utils/utility";
 import { useSearchParams } from "react-router-dom";
 import { eInviteRecord, IInvite } from "../../utils/constants";
 import { Modal } from "../../components/Modal/Modal";
+import { Loader } from "../../components/Loader/Loader";
 
 const Gallery = () => {
   const [searchParams] = useSearchParams();
@@ -285,13 +286,15 @@ z"
                       key={index}
                       href=""
                     >
-                      <img
-                        sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, (max-width: 1536px) 33vw, 25vw"
-                        className="transform rounded-lg brightness-90 transition will-change-auto group-hover:brightness-110 pointer-events-none"
-                        id="galleryimg"
-                        src={Utils.getUrl(image.src)}
-                        alt={image.alt}
-                      />
+                      <Suspense fallback={<Loader />}>
+                        <img
+                          sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, (max-width: 1536px) 33vw, 25vw"
+                          className="transform rounded-lg brightness-90 transition will-change-auto group-hover:brightness-110 pointer-events-none"
+                          id="galleryimg"
+                          src={Utils.getUrl(image.src)}
+                          alt={image.alt}
+                        />
+                      </Suspense>
                     </a>
                   );
                 })}

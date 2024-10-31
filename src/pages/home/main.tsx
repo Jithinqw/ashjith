@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { Header } from "../../components/Header/Header";
-import { cmsContent } from "../../cms";
 import Utils from "../../utils/utility";
 import { InviteHero } from "../../components/InviteHero/InviteHero";
 

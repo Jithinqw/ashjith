@@ -1,4 +1,6 @@
+import { Suspense } from "react";
 import { StackedInstagramImage } from "../stackedImage/StackedImage";
+import { Loader } from "../../Loader/Loader";
 
 export interface ILikes {
   userImage: string;
@@ -26,7 +28,12 @@ export const InstagramPost = (props: IInstagramPost) => {
       <div className="flex justify-between mt-4 ml-1 h-10 shadow-xl">
         <div className="justify-start">
           <div className="flex flex-row">
-            <img src={props.post.userImage} className="rounded-full h-8 w-8" />
+            <Suspense fallback={<Loader />}>
+              <img
+                src={props.post.userImage}
+                className="rounded-full h-8 w-8"
+              />
+            </Suspense>
             <div className="flex flex-col ml-1">
               <span className="text-sm">{props.post.userName}</span>
               <span className="suggestedText">{props.post.userSubText}</span>
@@ -55,7 +62,9 @@ export const InstagramPost = (props: IInstagramPost) => {
       </div>
       {/* Post body */}
       <div>
-        <img src={props.post.postImage} />
+        <Suspense fallback={<Loader />}>
+          <img src={props.post.postImage} />
+        </Suspense>
       </div>
       {/* Post actions bar */}
       <div className="flex justify-between mt-2 ml-2">
