@@ -104,7 +104,7 @@ export const cmsContent = {
       weddingVenueCta: "Venue",
       weddingVenueDescription: "Welcome to Thevelakkara, a name derived from Devalokakkara, meaning 'the land of the Gods.' Situated on the shores of Ashtamudi Lake, this beautiful Kerala village provides a picturesque backdrop for our wedding celebration.",
       hotelsCta: "Travelling....?!",
-      hotelsDescription: "Travelling to our place...?!, we got you covered. We found few hotels you can stay and relax. Locations are selected based on the venue or proximity to airports.",
+      hotelsDescription: "Travelling to our place...?!. We found few hotels you can stay and relax. Locations are selected based on the venue or proximity to airports.",
       activitiesCta: "Explore around...",
       activitiesDescription: "Interested in exploring the area? We have curated a selection of interesting places near Kollam for you to enjoy during your visit.",
       venueHeads: [
