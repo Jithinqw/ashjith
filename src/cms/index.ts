@@ -94,10 +94,10 @@ export const cmsContent = {
     ourstory: {
       mainCta: "How it all started",
       mainDescription: "Gather around website visitors young, middle-aged, and old! Listen to my tale of finding love.",
-      mainDescriptionLongText: "Let us rewind the clock time to August 2023, a more turbulent era when COVID-19 was wrapping up. Jithin was figuring out how to move on to a new country, and Ashley was busy between her lectures.",
-      lowDeckDescriptionText: "Jithin and Ashley met online and started talking. We both talked and talked, till we fell in love. By this time, Jithin and Ashley met, traveling thousands of miles. Through it all, their commitment to each other, and their love of food, and movies helped them navigate the bumps along the road to where they are now. Now, of course, is engaged to be married.  We are excited to invite you to celebrate our journey.",
+      mainDescriptionLongText: "Let us rewind the clock to August 2023, a more turbulent time when COVID-19 was winding down. Jithin was figuring out how to move to a new country, while Ashley was busy with her lectures.",
+      lowDeckDescriptionText: "Jithin and Ashley met online and began talking. They talked and talked until they fell in love. By this time, Jithin and Ashley had traveled thousands of miles to meet each other. Through it all, their commitment to one another, along with their shared love of food and movies, helped them navigate the bumps along the road to where they are now. They are now engaged to be married, and we are excited to invite you to celebrate our journey.",
       inviteHeading: "Thanks",
-      inviteDescription: "We thank God, all the humans and stars that aligned to bring us together. We are inviting you to the beautiful village of Thevelakkara, where we are getting married."
+      inviteDescription: "We thank God, all the people, and the stars that aligned to bring us together. We invite you to the beautiful village of Thevelakkara, where we will be getting married."
     },
     venue: {
       homePageBadgeCta: "Navigate to Maps",
@@ -428,12 +428,11 @@ export const cmsContent = {
   },
   modal: {
     errorModalHeading: "Illegal Invite link Found",
-    errorModaldescription:
-      "It seems you are using a unknown invite link. If you are sure you are using the correct link, please contact the sender. If you visited by mistake try going home.",
+    errorModaldescription:"It appears that you are using an unknown invitation link. If you believe this link is correct, please contact the sender for clarification. If you arrived here by mistake, we recommend returning to the homepage.",
     inviteModalHeading: "We’d love your esteemed presence",
     inviteModalhi: "Hi",
     inviteModalDescription:
-      "We request the honor of your presence at my wedding.",
+    "We kindly request the honor of your presence at our wedding.",
     errorModalCancelCTA: "Cancel",
     errorModalGoHomeCTA: "Go Home",
     inviteModalReject: "Reject",
@@ -449,7 +448,7 @@ export const cmsContent = {
   ],
   warning: {
     boldHeadingSr: "Warning!",
-    noteHeading: "Please note!",
-    mainHeading: "Recommendations, prices, star ratings and user reviews might change."
+    noteHeading: "",
+    mainHeading: "Please note that recommendations, prices, star ratings, and user reviews are subject to change."
   }
 };
