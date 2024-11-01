@@ -94,13 +94,19 @@ export const cmsContent = {
     ourstory: {
       mainCta: "How it all started",
       mainDescription: "Gather around website visitors young, middle-aged, and old! Listen to my tale of finding love.",
-      mainDescriptionLongText: "Let us rewind the clock of time to August 2023, a more turbulent era Covid 19 was wrapping up. Jithin was figuring out on moving on to a new country, Ashley was busy between her lectures.",
-      lowDeckDescriptionText: "Jithin and Ashley met online and started talking. We both talked and talked, till we fell in love. By this time, Jithin and Ashley met, travelling thousands of miles. Through it all, their commitment to each other, their love of food, and movies helped them navigate the bumps along the road to where they are now. Now, of course, is engaged to be married.  We are excited to invite you to celebrate our journey.",
+      mainDescriptionLongText: "Let us rewind the clock time to August 2023, a more turbulent era when COVID-19 was wrapping up. Jithin was figuring out how to move on to a new country, and Ashley was busy between her lectures.",
+      lowDeckDescriptionText: "Jithin and Ashley met online and started talking. We both talked and talked, till we fell in love. By this time, Jithin and Ashley met, traveling thousands of miles. Through it all, their commitment to each other, and their love of food, and movies helped them navigate the bumps along the road to where they are now. Now, of course, is engaged to be married.  We are excited to invite you to celebrate our journey.",
       inviteHeading: "Thanks",
-      inviteDescription: "We thank God, all the humans and stars that aligned to bring us together. We are inviting you to the beautiful village of Thevelakkara, were we are getting married."
+      inviteDescription: "We thank God, all the humans and stars that aligned to bring us together. We are inviting you to the beautiful village of Thevelakkara, where we are getting married."
     },
     venue: {
       homePageBadgeCta: "Navigate to Maps",
+      weddingVenueCta: "Venue",
+      weddingVenueDescription: "Welcome to Thevelakkara, a name derived from Devalokakkara, meaning 'the land of the Gods.' Situated on the shores of Ashtamudi Lake, this beautiful Kerala village provides a picturesque backdrop for our wedding celebration.",
+      hotelsCta: "Travelling....?!",
+      hotelsDescription: "Travelling to our place...?!, we got you covered. We found few hotels you can stay and relax. Locations are selected based on the venue or proximity to airports.",
+      activitiesCta: "Explore around...",
+      activitiesDescription: "Interested in exploring the area? We have curated a selection of interesting places near Kollam for you to enjoy during your visit.",
       venueHeads: [
         { displayValue: "Top", key: "top" },
         { displayValue: "Near Airport", key: "airport" },
@@ -250,7 +256,6 @@ export const cmsContent = {
         { src: "bg.png", alt: "image1" },
       ],
     },
-    rsvp: {},
     invite: {
       InviteHeroSection: {
         heroImage: "bg-default.jpg",
@@ -442,4 +447,9 @@ export const cmsContent = {
       wisherRelation: "Me",
     },
   ],
+  warning: {
+    boldHeadingSr: "Warning!",
+    noteHeading: "Please note!",
+    mainHeading: "Recommendations, prices, star ratings and user reviews might change."
+  }
 };

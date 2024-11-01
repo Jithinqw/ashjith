@@ -109,7 +109,7 @@ const OurStory = () => {
                       src={Utils.getUrl(
                         cmsContent.pages.invite.InviteHeroSection.heroImage
                       )}
-                      alt=""
+                      alt="hero image"
                     />
                   </Suspense>
                 </div>

@@ -11,11 +11,11 @@ export const InviteScene = () => {
         style={{ backgroundColor: cmsContent.config.invitecolor }}
       >
         <Suspense fallback={<Loader />}>
-        <img
-          src={Utils.getUrl("invite-final.png")}
-          height={"400px"}
-          width={"500px"}
-        />
+          <img
+            src={Utils.getUrl("invite-final.png")}
+            height={"400px"}
+            width={"500px"}
+          />
         </Suspense>
       </div>
     </>
