@@ -232,8 +232,52 @@ export const cmsContent = {
           image:
             "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
           starRating: 5,
-          head: "Top",
+          head: "Nature",
           amenities: ["Boating", "Sightseeing", "Backwaters", "Fishing"],
+        },
+        {
+          title: "Thangassery Light House",
+          address: "https://maps.app.goo.gl/yyxE5s5kBMNN5vzM7",
+          id: "24",
+          rating: 3,
+          image:
+            "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
+          starRating: 4,
+          amenities: [""],
+          head: "Top",
+        },
+        {
+          title: "Palaruvi Waterfalls",
+          address: "https://maps.app.goo.gl/5TxzQDx6o6Pbsu2TA",
+          id: "24",
+          rating: 3,
+          image:
+            "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
+          starRating: 4,
+          amenities: [""],
+          head: "Nature",
+        },
+        {
+          title: "RP Shopping Mall",
+          address: "https://maps.app.goo.gl/q9QJYXamawSpAeVx7",
+          id: "24",
+          rating: 3,
+          image:
+            "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
+          starRating: 3,
+          amenities: [""],
+          head: "Shopping",
+        },
+        {
+          title: "Jatayu Earth's Center",
+          address: "https://maps.app.goo.gl/f5fG2WYV85ff1E3k8",
+          id: "24",
+          rating: 3,
+          image:
+            "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
+          starRating: 5,
+          amenities: [""],
+          head: "Top",
         },
       ],
     },

@@ -62,6 +62,10 @@ export const VenueSelection = (props: IVenue) => {
       );
       setCurrentVenueList(venue);
     } else if (keyName === "nature") {
+      const venue = props.venue.filter(
+        (e) => e.head.toLowerCase() === "nature"
+      );
+      setCurrentVenueList(venue)
       setTopActive({
         airport: false,
         venue: false,
@@ -69,7 +73,19 @@ export const VenueSelection = (props: IVenue) => {
         shopping: false,
         nature: true,
       });
-    } else {
+    } else if(keyName === 'shopping') {
+      const venue = props.venue.filter(
+        (e) => e.head.toLowerCase() === "shopping"
+      );
+      setCurrentVenueList(venue);
+      setTopActive({
+        airport: false,
+        venue: false,
+        top: false,
+        shopping: true,
+        nature: false,
+      });
+    }else {
       setTopActive({
         airport: false,
         venue: false,
