@@ -58,23 +58,25 @@ export default function ListItem(props: IListItem) {
               </span>
             </dd>
           </div>
-          <div className="hidden md:block lg:block flex flex-row w-full mt-2 font-normal">
-            <dt className="sr-only">amenities</dt>
-            {props.amenities &&
-              props.amenities.length > 0 &&
-              props.amenities.map((e, i) => {
-                return (
-                  <span
-                    key={i}
-                    className={`inline-flex items-center rounded-md bg-indigo-50 px-2 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10 ${
-                      i > 0 ? "ml-2" : ""
-                    }`}
-                  >
-                    <dd className="text-slate-400 ">{e}</dd>
-                  </span>
-                );
-              })}
-          </div>
+          {props.amenities.length > 0 && (
+            <div className="hidden md:block lg:block flex flex-row w-full mt-2 font-normal">
+              <dt className="sr-only">amenities</dt>
+              {props.amenities &&
+                props.amenities.length > 0 &&
+                props.amenities.map((e, i) => {
+                  return (
+                    <span
+                      key={i}
+                      className={`inline-flex items-center rounded-md bg-indigo-50 px-2 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10 ${
+                        i > 0 ? "ml-2" : ""
+                      }`}
+                    >
+                      <dd className="text-slate-400 ">{e}</dd>
+                    </span>
+                  );
+                })}
+            </div>
+          )}
         </dl>
       </div>
     </article>

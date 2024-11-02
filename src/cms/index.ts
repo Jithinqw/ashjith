@@ -243,7 +243,7 @@ export const cmsContent = {
           image:
             "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
           starRating: 4,
-          amenities: [""],
+          amenities: ["Sea view"],
           head: "Top",
         },
         {
@@ -254,7 +254,7 @@ export const cmsContent = {
           image:
             "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
           starRating: 4,
-          amenities: [""],
+          amenities: ["Waterfalls"],
           head: "Nature",
         },
         {
@@ -265,7 +265,7 @@ export const cmsContent = {
           image:
             "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
           starRating: 3,
-          amenities: [""],
+          amenities: ["Shopping"],
           head: "Shopping",
         },
         {
@@ -276,7 +276,7 @@ export const cmsContent = {
           image:
             "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
           starRating: 5,
-          amenities: [""],
+          amenities: ["Great View", "Outdoor", "Cable cars"],
           head: "Top",
         },
       ],
