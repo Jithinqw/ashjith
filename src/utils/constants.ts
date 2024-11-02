@@ -55,5 +55,5 @@ export const eInviteRecord: Record<string, IInvite> = {
 
 export const alphaTestFlag = {
   "enable-instagram-component": false,
-  "date-annocement-animation": false,
+  "date-annocement-animation": true,
 };
