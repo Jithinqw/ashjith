@@ -3,12 +3,14 @@ import { cmsContent } from "../../cms";
 import { Header } from "../../components/Header/Header";
 import Utils from "../../utils/utility";
 import { Loader } from "../../components/Loader/Loader";
+import { Footer } from "../../components/Footer/Footer";
 
 const About = () => {
   const [cta, setCta] = useState<string>(cmsContent.pages.about.tentativeCta);
   useEffect(() => {
     calculateCta();
     Utils.setPageTitle("Jithin & Ashley - About");
+    Utils.redirectToPageIfInviteNotFound();
   }, []);
 
   const calculateCta = () => {
@@ -79,6 +81,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

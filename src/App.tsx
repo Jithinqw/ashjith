@@ -1,5 +1,4 @@
-import { Routes, Route } from "react-router-dom";
-import { BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import OrderOfWorkShip from "./pages/orderofService/order";
 import Venue from "./pages/venue/venue";
 import OurStory from "./pages/story/ourStory";
@@ -8,7 +7,8 @@ import Gallery from "./pages/gallery/gallery";
 import About from "./pages/about/about";
 import Main from "./pages/home/main";
 import NotFound from "./pages/notFound/notFound";
-
+import BlackSite from "./pages/blacksite/blacksite";
+import DigitalRights from "./pages/digitalRights/drm";
 
 function App() {
   return (
@@ -21,6 +21,8 @@ function App() {
         <Route path="/story" element={<OurStory />} />
         <Route path="/invite" element={<EInvite />} />
         <Route path="/about" element={<About />} />
+        <Route path="/blacksite" element={<BlackSite />} />
+        <Route path="/drm" element={<DigitalRights />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

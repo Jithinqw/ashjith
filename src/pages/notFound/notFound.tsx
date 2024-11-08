@@ -21,7 +21,7 @@ const NotFound = () => {
           viewBox="0 0 768 640"
           width="150px"
           height="150px"
-          enable-background="new 0 0 768 640"
+          enableBackground="new 0 0 768 640"
         >
           <path
             fill="#000000"

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { Header } from "../../components/Header/Header";
 import Utils from "../../utils/utility";
 import { VenueSelection } from "../../components/Venue/VenueSelection";
@@ -10,6 +10,7 @@ const Venue = () => {
 
   useEffect(() => {
     Utils.setPageTitle("Jithin & Ashley - Venue");
+    Utils.redirectToPageIfInviteNotFound();
   }, []);
 
   const toggleWarningBanner = () => {
@@ -31,15 +32,17 @@ const Venue = () => {
               </p>
             </blockquote>
             <figcaption className="mt-6 flex items-center justify-center space-x-4 text-left mb-4">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.413103094377!2d76.57870837462747!3d9.026027389036264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06069cf006951b%3A0xb9014b2978da4ac4!2sThevalakkara%20Marthoma%20Valiyapally!5e0!3m2!1sen!2sca!4v1730500247905!5m2!1sen!2sca"
-                width="400"
-                height="300"
-                style={{ border: 0 }}
-                allowFullScreen={undefined}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
+              <Suspense fallback={<p>Maps are loading</p>}>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.413103094377!2d76.57870837462747!3d9.026027389036264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06069cf006951b%3A0xb9014b2978da4ac4!2sThevalakkara%20Marthoma%20Valiyapally!5e0!3m2!1sen!2sca!4v1730500247905!5m2!1sen!2sca"
+                  width="400"
+                  height="300"
+                  style={{ border: 0 }}
+                  allowFullScreen={undefined}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </Suspense>
             </figcaption>
           </figure>
         </section>

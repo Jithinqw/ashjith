@@ -1,3 +1,5 @@
+import { eInviteRecord } from "./constants";
+
 export default class Utils {
   static getRandomArbitrary = (min: number, max: number) => {
     return Math.random() * (max - min) + min;
@@ -97,8 +99,8 @@ export default class Utils {
 
   /**
    * @function recordKeys
-   * @param object 
-   * @returns 
+   * @param object
+   * @returns
    */
   static recordKeys = <K extends PropertyKey, T>(object: Record<K, T>) => {
     return Object.keys(object) as K[];
@@ -106,8 +108,8 @@ export default class Utils {
 
   /**
    * @function recordEntries
-   * @param object 
-   * @returns 
+   * @param object
+   * @returns
    */
   static recordEntries = <K extends PropertyKey, T>(object: Record<K, T>) => {
     return Object.entries(object) as [K, T][];
@@ -115,44 +117,77 @@ export default class Utils {
 
   /**
    * @function getRecordByKeys
-   * @param object 
-   * @param key 
-   * @returns 
+   * @param object
+   * @param key
+   * @returns
    */
   static getRecordByKeys = (object: any, key?: string | null) => {
     const currentRecord = object[String(key)];
-    if(!Utils.isEmpty(currentRecord)) {
+    if (!Utils.isEmpty(currentRecord)) {
       return currentRecord;
     }
-    return '';
-  }
+    return "";
+  };
 
   /**
    * @function setPageTitle
    * @function sets a page name
-   * @param {string} pageName 
+   * @param {string} pageName
    */
   static setPageTitle = (pageName: string) => {
-    if(typeof window !== 'undefined' && typeof document !== 'undefined') {
+    if (typeof window !== "undefined" && typeof document !== "undefined") {
       document.title = pageName;
     }
-  }
+  };
 
   /**
    * @function appendInviteHash
-   * @param {string} pageUrl 
-   * @returns 
+   * @param {string} pageUrl
+   * @returns
    */
   static appendInviteHash = (pageUrl: string) => {
-    if(window && typeof window !== 'undefined') {
+    if (window && typeof window !== "undefined") {
       let hashValue = window.localStorage.getItem("inviteHash");
-      return pageUrl + `/?inviteRecord=${hashValue}`
+      return pageUrl + `/?inviteRecord=${hashValue}`;
     }
-  }
+  };
 
-  
   static escapeRegEx = (fullText: string) => {
-    const escapeRE = new RegExp(/([.*+?^=!:$(){}|[\]\/\\])/g)
-    return fullText.replace(escapeRE, "\\$1")
-  }
+    const escapeRE = new RegExp(/([.*+?^=!:$(){}|[\]\/\\])/g);
+    return fullText.replace(escapeRE, "\\$1");
+  };
+
+  static redirectToPageIfInviteNotFound = (
+    isInvitePage?: boolean,
+    hash?: string
+  ): void => {
+    if (window && typeof window !== "undefined") {
+      let hashValue = isInvitePage
+        ? hash
+        : window.localStorage.getItem("inviteHash");
+      const inviteRecord = this.getRecordByKeys(eInviteRecord, hashValue);
+      // execute this block if called from invite page.
+      if (
+        isInvitePage &&
+        !this.isEmpty(hash) &&
+        (inviteRecord === null ||
+          inviteRecord === undefined ||
+          this.isEmptyobject(inviteRecord))
+      ) {
+        window.location.href = window.location.origin + "/" + "blacksite";
+        return;
+      }
+      if (
+        hashValue === undefined ||
+        hashValue === null ||
+        this.isEmpty(hashValue) ||
+        inviteRecord === null ||
+        inviteRecord === undefined ||
+        this.isEmptyobject(inviteRecord)
+      ) {
+        window.location.href = window.location.origin + "/" + "blacksite";
+        return;
+      }
+    }
+  };
 }

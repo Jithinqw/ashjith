@@ -40,7 +40,7 @@ export const eInviteRecord: Record<string, IInvite> = {
   "4818a4b8-7ba3-4b7a-bb83-fb453ac559cb": { name: "Family", isInviteSend: true },
   "be9b6b7a-2519-4bea-9491-c5d26a311359": { name: "Joe", isInviteSend: true },
   "be9b6b7a-2519-4bea-9496-c5d26a311359": {
-    name: "Saji Uncle",
+    name: "Saji Uncle and family",
     isInviteSend: true,
   },
   "de9b6b7a-2519-4bea-9496-c5d26a311359": {

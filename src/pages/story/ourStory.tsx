@@ -22,6 +22,7 @@ const OurStory = () => {
       const refJson = d ? d : "";
       window.localStorage.setItem("inviteHash", refJson);
     }
+    Utils.redirectToPageIfInviteNotFound();
   }, []);
 
   useEffect(() => {

@@ -20,6 +20,11 @@ const EInvite = () => {
 
   useEffect(() => {
     Utils.setPageTitle("Jithin & Ashley - Invitation");
+    if (window && typeof window !== "undefined") {
+      const d = searchParams.get("inviteRecord");
+      const refJson = d ? d : "";
+      Utils.redirectToPageIfInviteNotFound(true, refJson);
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

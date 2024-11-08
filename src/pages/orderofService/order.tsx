@@ -7,6 +7,7 @@ import { cmsContent } from "../../cms";
 const OrderOfWorkShip = () => {
   useEffect(() => {
     Utils.setPageTitle("Jithin & Ashley - Order of Service");
+    Utils.redirectToPageIfInviteNotFound();
   }, []);
   return (
     <div>
