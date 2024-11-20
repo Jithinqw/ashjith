@@ -76,6 +76,11 @@ export const cmsContent = {
             techName: "Express",
           },
           {
+            url: "https://us.posthog.com/static/icons/apple-touch-icon.png",
+            alt: "PostHog",
+            techName: "PostHog"
+          },
+          {
             url: "https://www.typescriptlang.org/favicon-32x32.png",
             alt: "TypeScript",
             techName: "Typescript",

@@ -16,8 +16,6 @@ const EInvite = () => {
   const [userInviteModal, setInviteModal] = useState<boolean>(true);
   const navigate = useNavigate();
 
-  
-
   useEffect(() => {
     Utils.setPageTitle("Jithin & Ashley - Invitation");
     if (window && typeof window !== "undefined") {
