@@ -1,7 +1,5 @@
-import { Suspense } from "react";
 import { cmsContent } from "../../cms";
 import { ICompliments } from "../../utils/constants";
-import { Loader } from "../Loader/Loader";
 
 interface IRatedCompliments {
   wishes: Array<ICompliments>;
