@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { cmsContent } from "../../cms";
 import { List } from "./List";
 import ListItem, { IListItem } from "./ListItem";
 import { Nav } from "./Nav";

@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { cmsContent } from "../../cms";
 import Utils from "../../utils/utility";
+import { Footer } from "../../components/Footer/Footer";
 
 const DigitalRights = () => {
   useEffect(() => {
@@ -34,6 +35,7 @@ const DigitalRights = () => {
             );
           })}
       </div>
+      <Footer />
     </>
   );
 };

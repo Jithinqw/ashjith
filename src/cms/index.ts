@@ -51,6 +51,11 @@ export const cmsContent = {
             techName: "React",
           },
           {
+            url: "https://www.sanity.io/static/images/favicons/android-icon-192x192.png",
+            alt: "Sanity.io",
+            techName: "Sanity.io"
+          },
+          {
             url: "https://tailwindcss.com/favicons/apple-touch-icon.png?v=3",
             alt: "TailWind",
             techName: "Tailwind CSS",
@@ -89,7 +94,7 @@ export const cmsContent = {
     ourstory: {
       mainCta: "How it all started",
       mainDescription:
-        "Gather around website visitors young, middle-aged, and old! Listen to my tale of finding love.",
+        "Attention all website visitors, regardless of age—join me as I share my story of discovering love.",
       mainDescriptionLongText:
         "Let us rewind the clock to August 2023, a more turbulent time when COVID-19 was winding down. Jithin was figuring out how to move to a new country, while Ashley was busy with her lectures.",
       lowDeckDescriptionText:
@@ -240,45 +245,78 @@ export const cmsContent = {
         {
           title: "Thangassery Light House",
           address: "https://maps.app.goo.gl/yyxE5s5kBMNN5vzM7",
-          id: "24",
-          rating: 3,
+          id: "2124",
+          rating: 3.1,
           image:
             "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
-          starRating: 4,
-          amenities: ["Sea view"],
+          starRating: 3,
+          amenities: ["Sea view", "Harbour", "Port", "Fishing"],
+          head: "Top",
+        },
+        {
+          title: "Chinnakada Clock Tower",
+          address: "https://maps.app.goo.gl/KFGZ8LNAKxpiy5gAA",
+          id: "2224",
+          rating: 2.1,
+          image:
+            "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
+          starRating: 2,
+          amenities: ["Monument"],
           head: "Top",
         },
         {
           title: "Palaruvi Waterfalls",
           address: "https://maps.app.goo.gl/5TxzQDx6o6Pbsu2TA",
-          id: "24",
+          id: "2466",
           rating: 3,
           image:
             "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
           starRating: 4,
-          amenities: ["Waterfalls"],
+          amenities: ["Waterfalls", "Beautiful", "Water Activities", "Family Activity"],
+          head: "Nature",
+        },
+        {
+          title: "Kollam KSWTD Ferry Terminal",
+          address: "https://maps.app.goo.gl/VmUPQsLQ5NPiLZJy8",
+          id: "200",
+          rating: 4,
+          image:
+            "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
+          starRating: 4,
+          amenities: ["Boating", "Beautiful", "Water Activities", "Family Activity"],
           head: "Nature",
         },
         {
           title: "RP Shopping Mall",
           address: "https://maps.app.goo.gl/q9QJYXamawSpAeVx7",
-          id: "24",
+          id: "224",
           rating: 3,
           image:
             "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
           starRating: 3,
-          amenities: ["Shopping"],
+          amenities: ["Shopping", "KFC", "Mc Donalds", "Car Parking"],
+          head: "Shopping",
+        },
+        {
+          title: "Bishop Jerome Commercial Complex",
+          address: "https://maps.app.goo.gl/yyChoZiBT9CywY4Z8",
+          id: "2324",
+          rating: 3,
+          image:
+            "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
+          starRating: 3,
+          amenities: ["Shopping", "Books", "Mc Donalds", "Car Parking"],
           head: "Shopping",
         },
         {
           title: "Jatayu Earth's Center",
           address: "https://maps.app.goo.gl/f5fG2WYV85ff1E3k8",
-          id: "24",
+          id: "254",
           rating: 3,
           image:
             "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
           starRating: 5,
-          amenities: ["Great View", "Outdoor", "Cable cars"],
+          amenities: ["Great View", "Outdoor", "Cable cars", "Out Door Activity", "Free Parking"],
           head: "Top",
         },
       ],
@@ -458,46 +496,49 @@ export const cmsContent = {
     },
     drm: {
       mainCta: "Terms and Conditions",
-      lastUpdatedOn: "Updated On: Thu. 7th Nov, 2024",
+      lastUpdatedOn: "Updated On: Sat. 16th Nov, 2024",
       mainDec:
-        "These terms and conditions outline the rules and regulations for the use of ashjith.com's Website, located at ashjith.com. By accessing this website we assume you accept these terms and conditions. Do not continue to use ashjith.com if you do not agree to take all of the terms and conditions stated on this page.",
+        "These terms and conditions outline the rules and regulations for the use of ashjith.com's website, located at ashjith.com. By accessing this website, you agree to accept these terms and conditions. Do not continue to use ashjith.com if you do not agree to all of the terms and conditions stated on this page.",
       terms: [
         {
           heading: "Personal Information",
-          desc: "This website does not store, send or process personal or personally identifiable data.",
+          desc: "This website does not store, send, or process personal or personally identifiable data.",
         },
         {
           heading: "Reporting",
-          desc: "We employ services to identify if the user expericece is getting degraded due to any network, data or other issues.",
+          desc: "We employ services to identify if the user experience is being degraded due to any network, data, or other issues.",
         },
         {
           heading: "Cookies",
-          desc: "This site store cookies for security and other reasons. By using this website you agree to this use.",
+          desc: "This site stores cookies for security and other reasons. By using this website, you agree to this use.",
         },
         {
           heading: "Digital Media",
-          desc: "This site displays digital media on various pages. We have obtained consent from individuals in these media. Downloading, recirculating or maniplating images are not allowed and by using this website you agree to this condition.",
+          desc: "This site displays digital media on various pages. We have obtained consent from the individuals in these media. Downloading, recirculating, or manipulating images is not allowed, and by using this website, you agree to this condition.",
         },
         {
           heading: "Usage",
-          desc: "This site is only to be used by people who are invite to the view this website. Visiting, manipulating, reirculating this website links are not allowed. By using this website you agree that you are invited to use this website and manipulations and recirculations are not conducted.",
+          desc: "This site is only to be used by people who are invited to view this website. Visiting, manipulating, or recirculating this website's links is not allowed. By using this website, you agree that you are invited to use it and that manipulations and recirculations are not permitted.",
         },
         {
           heading: "Hyperlinking to this website",
-          desc: "Users are not allowed to display hyperlinks that redirect to this website, unless you are provincial or fedral goverment agency reporting crime, abuse or related issues."
+          desc: "Users are not allowed to display hyperlinks that redirect to this website, unless you are a provincial or federal government agency reporting crime, abuse, or related issues."
         },
         {
           heading: "Links",
-          desc: "This site uses Google Maps redirect links, by clicking on these links you agree to terms, conditions and privacy policy of Google Inc.",
+          desc: "This site uses Google Maps redirect links. By clicking on these links, you agree to the terms, conditions, and privacy policy of Google Inc.",
         },
         {
           heading: "iFrames",
-          desc: "Without prior approval and written permission, you may not create frames around our Webpages that alter in any way the visual presentation or appearance of our Website.",
+          desc: "Without prior approval and written permission, you may not create frames around our webpages that alter, in any way, the visual presentation or appearance of our website.",
         },
-        {heading: "Source Code", desc: "Source code for this webiste is avaliable online, but the owner will not be accepting any PR, pull request or feature requests. After Feb 3rd, 2025 source code will be private or archived."},
+        {
+          heading: "Source Code", 
+          desc: "Source code for this website is available online, but the owner will not be accepting any PRs, pull requests, or feature requests. After February 3rd, 2025, the source code will be private or archived."
+        },
         {
           heading: "Expire",
-          desc: "After 3rd Feb 2025, owner is planning to bring down, degrade or shutdown this website. Services to any visitor after this date is not guaranteed.",
+          desc: "After February 3rd, 2025, the owner plans to take down, degrade, or shut down this website. Services to any visitors after this date are not guaranteed.",
         },
       ],
     },
@@ -530,10 +571,10 @@ export const cmsContent = {
     errorModalHeading: "Illegal Invite link Found",
     errorModaldescription:
       "It appears that you are using an unknown invitation link. If you believe this link is correct, please contact the host for clarification. If you arrived here by mistake, we recommend returning to the homepage.",
-    inviteModalHeading: "We’d love your esteemed presence",
+    inviteModalHeading: "Notice",
     inviteModalhi: "Hi",
     inviteModalDescription:
-      "We kindly request the honor of your presence at our wedding.",
+      "We codially invite your prayerful presence and blessings to grace our new beginning",
     errorModalCancelCTA: "Cancel",
     errorModalGoHomeCTA: "Go Home",
     inviteModalReject: "Reject",
@@ -558,4 +599,8 @@ export const cmsContent = {
     drmCta: "Terms & Privacy Policy",
     drmLink: "/drm",
   },
+  shutDown: {
+    mainCta: "",
+    mainDescription: ""
+  }
 };

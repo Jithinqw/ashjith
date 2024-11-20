@@ -21,7 +21,7 @@ const Venue = () => {
     <>
       <Header />
       <div className="mb-12 overflow-hidden sm:mb-12 md:mb-4">
-        <section className="text-center px-8 mt-20 sm:mt-32 md:mt-40">
+        <section className="text-center px-8 mt-12 sm:mt-18 md:mt-24">
           <h2 className="text-slate-900 text-4xl font-extrabold sm:text-5xl text-pretty">
             {cmsContent.pages.venue.weddingVenueCta}
           </h2>
@@ -39,6 +39,7 @@ const Venue = () => {
                   height="300"
                   style={{ border: 0 }}
                   allowFullScreen={undefined}
+                  title="Google Maps Venue page"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
@@ -48,7 +49,7 @@ const Venue = () => {
         </section>
       </div>
       <div className="mb-12 overflow-hidden sm:mb-12 md:mb-4">
-        <section className="text-center px-8 mt-20 sm:mt-32 md:mt-40">
+        <section className="text-center px-8 mt-12 sm:mt-18 md:mt-24">
           <h2 className="text-slate-900 text-4xl tracking-tight font-extrabold sm:text-5xl">
             {cmsContent.pages.venue.hotelsCta}
           </h2>
@@ -69,7 +70,7 @@ const Venue = () => {
         </section>
       </div>
       <div className="mb-12 overflow-hidden sm:mb-12 md:mb-4">
-        <section className="text-center px-8 mt-20 sm:mt-32 md:mt-40">
+        <section className="text-center px-8 mt-12 sm:mt-18 md:mt-24">
           <h2 className="text-slate-900 text-4xl tracking-tight font-extrabold sm:text-5xl">
             {cmsContent.pages.venue.activitiesCta}
           </h2>

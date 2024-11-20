@@ -37,8 +37,14 @@ export const eInviteRecord: Record<string, IInvite> = {
     isInviteSend: true,
   },
   "4818a4b8-7ba3-4b7a-bb83-fb453ac479cb": { name: "Sara", isInviteSend: true },
-  "4818a4b8-7ba3-4b7a-bb83-fb453ac559cb": { name: "Family", isInviteSend: true },
-  "be9b6b7a-2519-4bea-9491-c5d26a311359": { name: "Joe", isInviteSend: true },
+  "4818a4b8-7ba3-4b7a-bb83-fb453ac559cb": {
+    name: "Family",
+    isInviteSend: true,
+  },
+  "be9b6b7a-2519-4bea-9491-c5d26a311359": {
+    name: "Joe and Family",
+    isInviteSend: true,
+  },
   "be9b6b7a-2519-4bea-9496-c5d26a311359": {
     name: "Saji Uncle and family",
     isInviteSend: true,
@@ -48,8 +54,24 @@ export const eInviteRecord: Record<string, IInvite> = {
     isInviteSend: true,
   },
   "c903f930-098b-4124-b76b-a83a2d3f7e7b": {
-    name: "Issac Thomas / Gigi Thomas",
+    name: "Prasad Uncle and Family",
     isInviteSend: true,
+  },
+  "26fd2ea7aea0abdbe08a72f386965460": {
+    name: "Rev Fr. Sunil D",
+    isInviteSend: true,
+  },
+  "f8e925fd2b95c0b088b73a60f386ebf3": {
+    name: "Rev Fr. Vinoy Daniel",
+    isInviteSend: true
+  },
+  "8a1b65d8c5b18ac748935788b2a93dc2": {
+    name: "Rev Fr. Sunil A John",
+    isInviteSend: true
+  },
+  "31f5d5281f31847b2498d0bab34bb357": {
+    name: "Rev Fr. Sam T Panicker",
+    isInviteSend: true
   },
 };
 

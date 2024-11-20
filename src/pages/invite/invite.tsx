@@ -1,22 +1,22 @@
 import { useEffect, useState } from "react";
-import { alphaTestFlag, eInviteRecord, IInvite } from "../../utils/constants";
+import { eInviteRecord, IInvite } from "../../utils/constants";
 import { useSearchParams } from "react-router-dom";
 import Utils from "../../utils/utility";
 import { Modal } from "../../components/Modal/Modal";
-import { Instagram } from "../../components/Instagram/Instagram";
 import { Header } from "../../components/Header/Header";
 import InviteScene from "../../components/InviteScene/InviteScene";
 import { cmsContent } from "../../cms";
 import { InviteModal } from "../../components/Modal/InviteModal";
+import { useNavigate } from "react-router-dom";
 
 const EInvite = () => {
   const [searchParams] = useSearchParams();
   const [inviteRecord, setInviteRecord] = useState<IInvite>();
   const [isUserNotInvited, setUserNotInvited] = useState<boolean>(false);
   const [userInviteModal, setInviteModal] = useState<boolean>(true);
+  const navigate = useNavigate();
 
-  const isInstagramComponentEnabled =
-    alphaTestFlag["enable-instagram-component"] === true;
+  
 
   useEffect(() => {
     Utils.setPageTitle("Jithin & Ashley - Invitation");
@@ -49,12 +49,11 @@ const EInvite = () => {
     } else if (Utils.isEmpty(inviteRecordFromS)) {
       setUserNotInvited(true);
     }
-    console.log(inviteRecord);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inviteRecord]);
 
   const onGoHomeBtnClick = () => {
-    window.location.href = window.location.origin + "/";
+    navigate('/');
   };
 
   const onDismissInviteClick = () => {
@@ -83,7 +82,6 @@ const EInvite = () => {
             />
           )}
           <InviteScene />
-          {isInstagramComponentEnabled && <Instagram />}
         </>
       )}
     </>

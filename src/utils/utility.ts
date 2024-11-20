@@ -1,4 +1,5 @@
 import { eInviteRecord } from "./constants";
+import { redirect } from "react-router-dom";
 
 export default class Utils {
   static getRandomArbitrary = (min: number, max: number) => {
@@ -160,7 +161,7 @@ export default class Utils {
   static redirectToPageIfInviteNotFound = (
     isInvitePage?: boolean,
     hash?: string
-  ): void => {
+  ) => {
     if (window && typeof window !== "undefined") {
       let hashValue = isInvitePage
         ? hash
@@ -174,8 +175,7 @@ export default class Utils {
           inviteRecord === undefined ||
           this.isEmptyobject(inviteRecord))
       ) {
-        window.location.href = window.location.origin + "/" + "blacksite";
-        return;
+        return redirect(window.location.origin + "/" + "blacksite");
       }
       if (
         hashValue === undefined ||
@@ -185,9 +185,12 @@ export default class Utils {
         inviteRecord === undefined ||
         this.isEmptyobject(inviteRecord)
       ) {
-        window.location.href = window.location.origin + "/" + "blacksite";
-        return;
+        return redirect(window.location.origin + "/" + "blacksite");
       }
     }
   };
+
+  static calculateCriticalTime = () => {
+    return true;
+  }
 }

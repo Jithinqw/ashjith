@@ -32,6 +32,7 @@ export const InstagramPost = (props: IInstagramPost) => {
               <img
                 src={props.post.userImage}
                 className="rounded-full h-8 w-8"
+                alt="insta"
               />
             </Suspense>
             <div className="flex flex-col ml-1">
@@ -63,7 +64,7 @@ export const InstagramPost = (props: IInstagramPost) => {
       {/* Post body */}
       <div>
         <Suspense fallback={<Loader />}>
-          <img src={props.post.postImage} />
+          <img src={props.post.postImage} alt="insta"/>
         </Suspense>
       </div>
       {/* Post actions bar */}

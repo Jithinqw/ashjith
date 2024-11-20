@@ -3,7 +3,7 @@ import { cmsContent } from "../../cms";
 import { Header } from "../../components/Header/Header";
 import Utils from "../../utils/utility";
 import { useSearchParams } from "react-router-dom";
-import { eInviteRecord, IInvite } from "../../utils/constants";
+import { eInviteRecord, IInvite, alphaTestFlag } from "../../utils/constants";
 import { Modal } from "../../components/Modal/Modal";
 import { Loader } from "../../components/Loader/Loader";
 
@@ -11,9 +11,10 @@ const Gallery = () => {
   const [searchParams] = useSearchParams();
   const [inviteRecord, setInviteRecord] = useState<IInvite>();
   const [isUserNotInvited, setUserNotInvited] = useState<boolean>(false);
+
   useEffect(() => {
     Utils.setPageTitle("Jithin & Ashley - Gallery");
-	Utils.redirectToPageIfInviteNotFound();
+    Utils.redirectToPageIfInviteNotFound();
     let allImages = document.querySelectorAll("img");
     allImages.forEach((value) => {
       value.oncontextmenu = (e) => {

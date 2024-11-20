@@ -47,6 +47,7 @@ export const Compliments = (props: IRatedCompliments) => {
                       src={e.wisherImg}
                       decoding={"async"}
                       style={{ color: "transparent" }}
+                      alt="Suspense"
                       height={"8"}
                     />
                   </Suspense>
