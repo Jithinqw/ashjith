@@ -20,6 +20,10 @@ export const eInviteRecord: Record<string, IInvite> = {
     name: "Ashely",
     isInviteSend: true,
   },
+  "527be0ec-8g5a-4bd7-b584-45afc6969daf": {
+    name: "Rev Fr. Joji Jacob",
+    isInviteSend: true,
+  },
   "6f9b6e0d-536a-4caf-a6ee-5a23ff210ecc": {
     name: "General",
     isInviteSend: true,
@@ -127,6 +131,10 @@ export const eInviteRecord: Record<string, IInvite> = {
   },
   "41gg5t7297p31847b2498d6bab34bc357": {
     name: "Dhanesh and Family",
+    isInviteSend: true,
+  },
+  "41gg5v7297p31847b2498d6bab34bc357": {
+    name: "Dhanya and Family",
     isInviteSend: true,
   },
   "41gh5t7297p31847b2498d6bab34bc357": {
