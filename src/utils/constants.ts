@@ -65,6 +65,18 @@ export const eInviteRecord: Record<string, IInvite> = {
     name: "Prasad Uncle and Family",
     isInviteSend: true,
   },
+  "c903f9x0-098b-4124-b76b-a83a2d3f7e7b": {
+    name: "Kunjumon Pappa and Family",
+    isInviteSend: true,
+  },
+  "c903f9xg-098b-4124-b76b-a83a2d3f7e7b": {
+    name: "Robert Uncle and Family",
+    isInviteSend: true,
+  },
+  "g903f9xg-098b-4124-b76b-a83a2d3f7e7b": {
+    name: "Saji Uppappan & Family",
+    isInviteSend: true,
+  },
   "26fd2ea7aea0abdbe08a72f386965460": {
     name: "Rev Fr. Sunil D",
     isInviteSend: true,
@@ -99,6 +111,10 @@ export const eInviteRecord: Record<string, IInvite> = {
   },
   "41f5d5297m31847b2498d0bab34bc357": {
     name: "Mr. & Mrs. Chandran",
+    isInviteSend: true,
+  },
+  "41f5gg5297m31847b2498d0bab34bc357": {
+    name: "Sanal",
     isInviteSend: true,
   },
   "41f5d5297m31847b2498d6bab34bc357": {
