@@ -65,7 +65,7 @@ export const eInviteRecord: Record<string, IInvite> = {
     name: "Rev Fr. Sunil D",
     isInviteSend: true,
   },
-  f8e925fd2b95c0b088b73a60f386ebf3: {
+  "f8e925fd2b95c0b088b73a60f386ebf3": {
     name: "Rev Fr. Vinoy Daniel",
     isInviteSend: true,
   },
