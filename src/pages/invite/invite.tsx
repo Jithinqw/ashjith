@@ -44,8 +44,6 @@ const EInvite = () => {
       inviteRecord?.isInviteSend === false
     ) {
       setUserNotInvited(true);
-    } else if(Utils.isEmptyobject(inviteRecord)) {
-      setUserNotInvited(true);
     } else if (Utils.isEmpty(inviteRecordFromS)) {
       setUserNotInvited(true);
     }
