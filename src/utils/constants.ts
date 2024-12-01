@@ -102,19 +102,19 @@ export const eInviteRecord: Record<string, IInvite> = {
     isInviteSend: true,
   },
   "41f5d7297m31847b2498d6bab34bc357": {
-    name: "Binoy",
+    name: "Binoy and Family",
     isInviteSend: true,
   },
   "61f5d7297m31847b2498d6bab34bc357": {
-    name: "Benish",
+    name: "Benish and Family",
     isInviteSend: true,
   },
   "41f5d7297y31847b2498d6bab34bc357": {
-    name: "Sam",
+    name: "Sam and Family",
     isInviteSend: true,
   },
   "41f5d7297z31847b2498d6bab34bc357": {
-    name: "Monish",
+    name: "Monish and Family",
     isInviteSend: true,
   },
   "41f5d7297p31847b2498d6bab34bc357": {
@@ -126,11 +126,11 @@ export const eInviteRecord: Record<string, IInvite> = {
     isInviteSend: true,
   },
   "41gg5t7297p31847b2498d6bab34bc357": {
-    name: "Dhanesh",
+    name: "Dhanesh and Family",
     isInviteSend: true,
   },
   "41gh5t7297p31847b2498d6bab34bc357": {
-    name: "Binu",
+    name: "Binu and Family",
     isInviteSend: true,
   },
   "41gh5t7297x31847b2498d6bab34bc357": {
@@ -138,7 +138,7 @@ export const eInviteRecord: Record<string, IInvite> = {
     isInviteSend: true,
   },
   "41gh5j7297x31847b2498d6bab34bc357": {
-    name: "Titu",
+    name: "Titu & Family",
     isInviteSend: true,
   },
 };
