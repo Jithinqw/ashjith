@@ -28,6 +28,10 @@ export const eInviteRecord: Record<string, IInvite> = {
     name: "Zacharia / Jessy Zacharia",
     isInviteSend: true,
   },
+  "1818a4bx-7ba3-4b7a-bb83-fb453ac979cb": {
+    name: "Kunchandy Uncle and Family",
+    isInviteSend: true,
+  },
   "1818a4b8-7ba3-4b7a-bb83-fb453ac479cb": {
     name: "Timothy",
     isInviteSend: true,
@@ -61,17 +65,81 @@ export const eInviteRecord: Record<string, IInvite> = {
     name: "Rev Fr. Sunil D",
     isInviteSend: true,
   },
-  "f8e925fd2b95c0b088b73a60f386ebf3": {
+  f8e925fd2b95c0b088b73a60f386ebf3: {
     name: "Rev Fr. Vinoy Daniel",
-    isInviteSend: true
+    isInviteSend: true,
   },
   "8a1b65d8c5b18ac748935788b2a93dc2": {
     name: "Rev Fr. Sunil A John",
-    isInviteSend: true
+    isInviteSend: true,
   },
   "31f5d5281f31847b2498d0bab34bb357": {
     name: "Rev Fr. Sam T Panicker",
-    isInviteSend: true
+    isInviteSend: true,
+  },
+  "31f5d5291f31847b2498d0bab34bb357": {
+    name: "Anirudh",
+    isInviteSend: true,
+  },
+  "31f5d5297f31847b2498d0bab34bb357": {
+    name: "Rev Fr. Saju Samuel",
+    isInviteSend: true,
+  },
+  "31f5d5297m31847b2498d0bab34bb357": {
+    name: "Rev Fr. C John",
+    isInviteSend: true,
+  },
+  "41f5d5297m31847b2498d0bab34bb357": {
+    name: "Col. MK Menon",
+    isInviteSend: true,
+  },
+  "41f5d5297m31847b2498d0bab34bc357": {
+    name: "Mr. & Mrs. Chandran",
+    isInviteSend: true,
+  },
+  "41f5d5297m31847b2498d6bab34bc357": {
+    name: "Sherin & Kripa",
+    isInviteSend: true,
+  },
+  "41f5d7297m31847b2498d6bab34bc357": {
+    name: "Binoy",
+    isInviteSend: true,
+  },
+  "61f5d7297m31847b2498d6bab34bc357": {
+    name: "Benish",
+    isInviteSend: true,
+  },
+  "41f5d7297y31847b2498d6bab34bc357": {
+    name: "Sam",
+    isInviteSend: true,
+  },
+  "41f5d7297z31847b2498d6bab34bc357": {
+    name: "Monish",
+    isInviteSend: true,
+  },
+  "41f5d7297p31847b2498d6bab34bc357": {
+    name: "Mr. & Mrs. Jose",
+    isInviteSend: true,
+  },
+  "41f5t7297p31847b2498d6bab34bc357": {
+    name: "Mr. & Mrs. Roy",
+    isInviteSend: true,
+  },
+  "41gg5t7297p31847b2498d6bab34bc357": {
+    name: "Dhanesh",
+    isInviteSend: true,
+  },
+  "41gh5t7297p31847b2498d6bab34bc357": {
+    name: "Binu",
+    isInviteSend: true,
+  },
+  "41gh5t7297x31847b2498d6bab34bc357": {
+    name: "Bibin",
+    isInviteSend: true,
+  },
+  "41gh5j7297x31847b2498d6bab34bc357": {
+    name: "Titu",
+    isInviteSend: true,
   },
 };
 

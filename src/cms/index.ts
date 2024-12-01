@@ -544,7 +544,7 @@ export const cmsContent = {
         {
           heading: "Expire",
           desc: "After February 3rd, 2025, the owner plans to take down, degrade, or shut down this website. Services to any visitors after this date are not guaranteed.",
-        },
+        }
       ],
     },
     blacksite: {
@@ -587,10 +587,28 @@ export const cmsContent = {
   },
   compliments: [
     {
-      mainText: "ആശംസകൾ",
-      wisherName: "Jithin",
+      mainText: "To love and be loved - may you always find in each other's eyes the home your hearts have been searching for. Happy married life, dear chechy and achacha!",
+      wisherName: "Sarah",
       wisherRole: "",
-      wisherRelation: "Me",
+      wisherRelation: "",
+    },
+    {
+      mainText: "Best Wishes",
+      wisherName: "Sanal",
+      wisherRole: "",
+      wisherRelation: "",
+    },
+    {
+      mainText: "Jithin and Ashley, Two hearts as one, a journey divine, may laughter and love in thy lives intertwine, as bright as stars, forever ye shine.",
+      wisherName: "Timothy",
+      wisherRole: "",
+      wisherRelation: "",
+    },
+    {
+      mainText: "Best Wishes",
+      wisherName: "Pappa & Mummy",
+      wisherRole: "",
+      wisherRelation: "",
     },
   ],
   warning: {
