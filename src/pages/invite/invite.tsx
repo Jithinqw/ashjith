@@ -39,9 +39,6 @@ const EInvite = () => {
     if (!Utils.isEmpty(inviteRecordFromS)) {
       setInviteRecord(Utils.getRecordByKeys(eInviteRecord, inviteRecordFromS));
     }
-    if(Utils.isEmptyobject(inviteRecord)) {
-      setUserNotInvited(true)
-    }
     if (
       !Utils.isEmptyobject(inviteRecord) &&
       inviteRecord?.isInviteSend === false
