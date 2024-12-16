@@ -5,16 +5,19 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { PostHogProvider } from "posthog-js/react";
 import { cmsContent } from "./cms";
+import posthog from "posthog-js";
 
-const options = {
-  api_host: cmsContent.config.metaCreds.publicKey,
-};
-
+posthog.init(
+  cmsContent.config.metaCreds.publicKey,
+  {
+    api_host: cmsContent.config.metaCreds.publicHost,
+    person_profiles: 'identified_only',
+  }
+);
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <PostHogProvider 
-      apiKey={cmsContent.config.metaCreds.publicKey}
-      options={options}
+      client={posthog}
     >
       <App />
     </PostHogProvider>
