@@ -6,6 +6,10 @@ export const cmsContent = {
     orderOfWorkShipEnabled: false,
     invitecolor: "#f9f5f2",
     isWebsiteShutdown: false,
+    metaCreds: {
+      publicKey: "phc_d7Zw5A7o58V0OueOivXJeUBJyTbgfQqWH243yGtMydW",
+      publicHost: "https://us.i.posthog.com"
+    }
   },
   pages: {
     home: {
@@ -334,10 +338,10 @@ export const cmsContent = {
     gallery: {
       buttonTextCTA: "Enjoy our memories",
       images: [
-        { src: "bg.png", alt: "image1" },
-        { src: "bg.png", alt: "image1" },
-        { src: "bgimg.jpg", alt: "image1" },
-        { src: "bg.png", alt: "image1" },
+        { src: "pg1.jpg", alt: "image1" },
+        { src: "pg2.jpg", alt: "image1" },
+        { src: "pg3.jpg", alt: "image1" },
+        { src: "pg4.JPG", alt: "image1" },
         { src: "bgimg.jpg", alt: "image1" },
         { src: "bg.png", alt: "image1" },
         { src: "bgimg.jpg", alt: "image1" },
@@ -568,8 +572,8 @@ export const cmsContent = {
     headingPages: [
       { headingTitle: "Our Story", source: "/story" },
       { headingTitle: "Venue", source: "/venue" },
-      { headingTitle: "Order Of Workship", source: "/order" },
       { headingTitle: "Gallery", source: "/gallery" },
+      {headingTitle: "Order Of Workship", source: "/order"}
     ],
   },
   modal: {

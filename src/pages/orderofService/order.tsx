@@ -3,11 +3,14 @@ import { Header } from "../../components/Header/Header";
 import Utils from "../../utils/utility";
 import ContentBlock from "../../components/ContentBlock/ContentBlock";
 import { cmsContent } from "../../cms";
+import { useFeatureFlagEnabled } from 'posthog-js/react';
 
 const OrderOfWorkShip = () => {
+  const showWelcomeMessage = useFeatureFlagEnabled('enable-order-of-workship');
   useEffect(() => {
     Utils.setPageTitle("Jithin & Ashley - Order of Service");
     Utils.redirectToPageIfInviteNotFound();
+    console.log(showWelcomeMessage)
   }, []);
   return (
     <div>

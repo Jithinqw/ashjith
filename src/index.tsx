@@ -3,10 +3,21 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { PostHogProvider } from "posthog-js/react";
+import { cmsContent } from "./cms";
+
+const options = {
+  api_host: cmsContent.config.metaCreds.publicKey,
+};
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <App />
+    <PostHogProvider 
+      apiKey={cmsContent.config.metaCreds.publicKey}
+      options={options}
+    >
+      <App />
+    </PostHogProvider>
   </React.StrictMode>
 );
 

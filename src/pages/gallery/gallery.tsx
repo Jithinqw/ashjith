@@ -3,7 +3,7 @@ import { cmsContent } from "../../cms";
 import { Header } from "../../components/Header/Header";
 import Utils from "../../utils/utility";
 import { useSearchParams } from "react-router-dom";
-import { eInviteRecord, IInvite, alphaTestFlag } from "../../utils/constants";
+import { eInviteRecord, IInvite } from "../../utils/constants";
 import { Modal } from "../../components/Modal/Modal";
 import { Loader } from "../../components/Loader/Loader";
 
