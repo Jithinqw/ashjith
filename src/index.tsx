@@ -11,7 +11,7 @@ posthog.init(
   cmsContent.config.metaCreds.publicKey,
   {
     api_host: cmsContent.config.metaCreds.publicHost,
-    person_profiles: 'identified_only',
+    person_profiles: "always",
   }
 );
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
