@@ -8,8 +8,8 @@ export const cmsContent = {
     isWebsiteShutdown: false,
     metaCreds: {
       publicKey: "phc_d7Zw5A7o58V0OueOivXJeUBJyTbgfQqWH243yGtMydW",
-      publicHost: "https://us.i.posthog.com"
-    }
+      publicHost: "https://us.i.posthog.com",
+    },
   },
   pages: {
     home: {
@@ -57,7 +57,7 @@ export const cmsContent = {
           {
             url: "https://www.sanity.io/static/images/favicons/android-icon-192x192.png",
             alt: "Sanity.io",
-            techName: "Sanity.io"
+            techName: "Sanity.io",
           },
           {
             url: "https://tailwindcss.com/favicons/apple-touch-icon.png?v=3",
@@ -82,7 +82,7 @@ export const cmsContent = {
           {
             url: "https://us.posthog.com/static/icons/apple-touch-icon.png",
             alt: "PostHog",
-            techName: "PostHog"
+            techName: "PostHog",
           },
           {
             url: "https://www.typescriptlang.org/favicon-32x32.png",
@@ -281,7 +281,12 @@ export const cmsContent = {
           image:
             "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
           starRating: 4,
-          amenities: ["Waterfalls", "Beautiful", "Water Activities", "Family Activity"],
+          amenities: [
+            "Waterfalls",
+            "Beautiful",
+            "Water Activities",
+            "Family Activity",
+          ],
           head: "Nature",
         },
         {
@@ -292,7 +297,12 @@ export const cmsContent = {
           image:
             "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
           starRating: 4,
-          amenities: ["Boating", "Beautiful", "Water Activities", "Family Activity"],
+          amenities: [
+            "Boating",
+            "Beautiful",
+            "Water Activities",
+            "Family Activity",
+          ],
           head: "Nature",
         },
         {
@@ -325,7 +335,13 @@ export const cmsContent = {
           image:
             "https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/bgdefault_bg.jpg",
           starRating: 5,
-          amenities: ["Great View", "Outdoor", "Cable cars", "Out Door Activity", "Free Parking"],
+          amenities: [
+            "Great View",
+            "Outdoor",
+            "Cable cars",
+            "Out Door Activity",
+            "Free Parking",
+          ],
           head: "Top",
         },
       ],
@@ -334,19 +350,84 @@ export const cmsContent = {
       mainCta: "This Page will be available soon...",
       bodyContent:
         "On our special day, we will publish order of workship here.",
+      welcomeLabel: "Introduction",
+      sideBarContent:[
+        {
+          labelName: "Introduction",
+          labelId: "inroduction",
+        },
+        {
+          labelName: "Introduction",
+          labelId: "inroduction",
+        },
+        {
+          labelName: "Introduction",
+          labelId: "inroduction",
+        },
+        {
+          labelName: "Introduction",
+          labelId: "inroduction",
+        },
+        {
+          labelName: "Introduction",
+          labelId: "inroduction",
+        }
+      ],
+      introduction: [
+        {
+          groom: [
+            {
+              label: "Bridegroom",
+              labelValue: "Jithin Zacharia",
+            },
+            {
+              label: "Groom's Parents",
+              labelValue: "Mr. Zacharia Issac & Mrs. Jessy Zacharia",
+            },
+            {
+              label: "Groom's Address",
+              labelValue:
+                "Parankimamoottil House Kadappa, Mynagappally, Kollam",
+            },
+          ],
+        },
+        {
+          bride: [
+            {
+              label: "Bride",
+              labelValue: "Ashley Mathew",
+            },
+
+            {
+              label: "Bride's Parents",
+              labelValue: "Mr. KC Mathew & Mrs. Joemol Mathew",
+            },
+            {
+              label: "Bride's Address",
+              labelValue: "Chirayil 11 F, AVS Serene Garden, Tiruvalla",
+            },
+            {
+              label: "Bride's Brother",
+              labelValue: "Bob Cherian Mathew",
+            },
+          ],
+        },
+      ],
     },
     gallery: {
       buttonTextCTA: "Enjoy our memories",
       images: [
+        { src: "bgimg.jpg", alt: "image1" },
+        { src: "bg.png", alt: "image1" },
+        { src: "bgimg.jpg", alt: "image1" },
+        { src: "bgimg.jpg", alt: "image1" },
+        { src: "bg.png", alt: "image1" },
+      ],
+      personalPhotos: [
         { src: "pg1.jpg", alt: "image1" },
         { src: "pg2.jpg", alt: "image1" },
         { src: "pg3.jpg", alt: "image1" },
         { src: "pg4.JPG", alt: "image1" },
-        { src: "bgimg.jpg", alt: "image1" },
-        { src: "bg.png", alt: "image1" },
-        { src: "bgimg.jpg", alt: "image1" },
-        { src: "bgimg.jpg", alt: "image1" },
-        { src: "bg.png", alt: "image1" },
       ],
     },
     invite: {
@@ -531,7 +612,7 @@ export const cmsContent = {
         },
         {
           heading: "Hyperlinking to this website",
-          desc: "Users are not allowed to display hyperlinks that redirect to this website, unless you are a provincial or federal government agency reporting crime, abuse, or related issues."
+          desc: "Users are not allowed to display hyperlinks that redirect to this website, unless you are a provincial or federal government agency reporting crime, abuse, or related issues.",
         },
         {
           heading: "Links",
@@ -542,13 +623,13 @@ export const cmsContent = {
           desc: "Without prior approval and written permission, you may not create frames around our webpages that alter, in any way, the visual presentation or appearance of our website.",
         },
         {
-          heading: "Source Code", 
-          desc: "Source code for this website is available online, but the owner will not be accepting any PRs, pull requests, or feature requests. After February 3rd, 2025, the source code will be private or archived."
+          heading: "Source Code",
+          desc: "Source code for this website is available online, but the owner will not be accepting any PRs, pull requests, or feature requests. After February 3rd, 2025, the source code will be private or archived.",
         },
         {
           heading: "Expire",
           desc: "After February 3rd, 2025, the owner plans to take down, degrade, or shut down this website. Services to any visitors after this date are not guaranteed.",
-        }
+        },
       ],
     },
     blacksite: {
@@ -573,7 +654,7 @@ export const cmsContent = {
       { headingTitle: "Our Story", source: "/story" },
       { headingTitle: "Venue", source: "/venue" },
       { headingTitle: "Gallery", source: "/gallery" },
-      {headingTitle: "Order Of Workship", source: "/order"}
+      { headingTitle: "Order Of Workship", source: "/order" },
     ],
   },
   modal: {
@@ -591,7 +672,8 @@ export const cmsContent = {
   },
   compliments: [
     {
-      mainText: "To love and be loved - may you always find in each other's eyes the home your hearts have been searching for. Happy married life, dear chechy and achacha!",
+      mainText:
+        "To love and be loved - may you always find in each other's eyes the home your hearts have been searching for. Happy married life, dear chechy and achacha!",
       wisherName: "Sarah",
       wisherRole: "",
       wisherRelation: "",
@@ -603,7 +685,8 @@ export const cmsContent = {
       wisherRelation: "",
     },
     {
-      mainText: "Jithin and Ashley, Two hearts as one, a journey divine, may laughter and love in thy lives intertwine, as bright as stars, forever ye shine.",
+      mainText:
+        "Jithin and Ashley, Two hearts as one, a journey divine, may laughter and love in thy lives intertwine, as bright as stars, forever ye shine.",
       wisherName: "Timothy",
       wisherRole: "",
       wisherRelation: "",
@@ -628,6 +711,6 @@ export const cmsContent = {
   },
   shutDown: {
     mainCta: "",
-    mainDescription: ""
-  }
+    mainDescription: "",
+  },
 };

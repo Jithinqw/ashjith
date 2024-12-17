@@ -6,11 +6,14 @@ import { useSearchParams } from "react-router-dom";
 import { eInviteRecord, IInvite } from "../../utils/constants";
 import { Modal } from "../../components/Modal/Modal";
 import { Loader } from "../../components/Loader/Loader";
+import { useFeatureFlagEnabled } from 'posthog-js/react';
 
 const Gallery = () => {
   const [searchParams] = useSearchParams();
   const [inviteRecord, setInviteRecord] = useState<IInvite>();
   const [isUserNotInvited, setUserNotInvited] = useState<boolean>(false);
+  const [personalPhotos, setPersonalPhotos] = useState(cmsContent.pages.gallery.images)
+  const isPersonalPhotosEnabled = useFeatureFlagEnabled('enable-personal-photos');
 
   useEffect(() => {
     Utils.setPageTitle("Jithin & Ashley - Gallery");
@@ -22,6 +25,12 @@ const Gallery = () => {
       };
     });
   }, []);
+
+  useEffect(() => {
+	if(isPersonalPhotosEnabled) {
+		setPersonalPhotos(cmsContent.pages.gallery.personalPhotos)
+	}
+  }, [isPersonalPhotosEnabled]);
 
   useEffect(() => {
     const inviteRecordFromS = searchParams.get("inviteRecord");
@@ -275,9 +284,7 @@ z"
                   {cmsContent.pages.gallery.buttonTextCTA}
                 </a>
               </div>
-              {cmsContent.pages.gallery.images &&
-                cmsContent.pages.gallery.images.length > 0 &&
-                cmsContent.pages.gallery.images.map((image, index) => {
+              {personalPhotos && personalPhotos.length > 0 && personalPhotos.map((image, index) => {
                   return (
                     <a
                       className="after:content group relative after:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:shadow-highlight pointer-events-none"
