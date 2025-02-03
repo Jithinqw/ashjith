@@ -22,7 +22,6 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/blacksite" element={<BlackSite />} />
         <Route path="/drm" element={<DigitalRights />} />
-        <Route path="/order" element={<OrderOfWorkShip />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

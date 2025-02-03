@@ -26,7 +26,7 @@ module.exports = {
           "100%": {
             transform: "translate(0px 0px) scale(1)"
           }
-        }
+        },
       },
       rotate: {
         '207': '207deg'

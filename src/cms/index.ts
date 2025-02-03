@@ -347,11 +347,12 @@ export const cmsContent = {
       ],
     },
     orderofworkship: {
+      navigationCta: "Navigate",
       mainCta: "This Page will be available soon...",
       bodyContent:
         "On our special day, we will publish order of workship here.",
       welcomeLabel: "Introduction",
-      sideBarContent:[
+      sideBarContent: [
         {
           labelName: "Introduction",
           labelId: "inroduction",
@@ -371,48 +372,324 @@ export const cmsContent = {
         {
           labelName: "Introduction",
           labelId: "inroduction",
-        }
-      ],
-      introduction: [
-        {
-          groom: [
-            {
-              label: "Bridegroom",
-              labelValue: "Jithin Zacharia",
-            },
-            {
-              label: "Groom's Parents",
-              labelValue: "Mr. Zacharia Issac & Mrs. Jessy Zacharia",
-            },
-            {
-              label: "Groom's Address",
-              labelValue:
-                "Parankimamoottil House Kadappa, Mynagappally, Kollam",
-            },
-          ],
-        },
-        {
-          bride: [
-            {
-              label: "Bride",
-              labelValue: "Ashley Mathew",
-            },
-
-            {
-              label: "Bride's Parents",
-              labelValue: "Mr. KC Mathew & Mrs. Joemol Mathew",
-            },
-            {
-              label: "Bride's Address",
-              labelValue: "Chirayil 11 F, AVS Serene Garden, Tiruvalla",
-            },
-            {
-              label: "Bride's Brother",
-              labelValue: "Bob Cherian Mathew",
-            },
-          ],
         },
       ],
+      liturgey: {
+        sections: [
+          {
+            sectionName: "mainHeading",
+            sectionType: "mainHeading",
+            components: {
+              items: [],
+              text: "The Mar Thoma Syrian Christian Wedding Liturgy",
+              isCenter: true,
+            }
+          },
+          {
+            sectionName: "subHeading",
+            sectionType: "subHeading",
+            components: {
+              items: [],
+              isCenter: false,
+              isLeft: true,
+              isRight: false,
+              text: "Introduction"
+            }
+          },
+          {
+            sectionName: "text",
+            sectionType: "text",
+            components: {
+              items: [],
+              text: "The order of Service according to the Mar Thoma tradition is an exotic blend of biblical traditions, teachings and practices of our forefathers in Palestine and Syria and the customs of South India. It is richi n Symbolism. Christian symbolized as the Divine Bridegroom whose Bride is the Church. The prayers emphasize that Marriage is a Sacrament and that Family is a divinely blessed institution."
+            }
+          },
+          {
+            sectionName: "text",
+            sectionType: "text",
+            components: {
+              items: [],
+              text: "The wedding is an occasion which is both solemn and joyous, as we reflect on the seriousnes of the decision of that the bride and bridegroom have taken as we share in their joy. By our presence here,we accept our responsibility to help and encourage them in the new relationship into which they are about to enter. Let us invoke the blessings of God upon them."
+            }
+          },
+          {
+            sectionName: "subHeading",
+            sectionType: "subHeading",
+            components: {
+              items: [],
+              isCenter: true,
+              isLeft: false,
+              isRight: false,
+              text: "The Order of Service"
+            }
+          },
+          {
+            sectionName: "text",
+            sectionType: "text",
+            components: {
+              items: [],
+              text: "The Order of Service has two Parts : "
+            }
+          },
+          {
+            sectionName: "list",
+            sectionType: "list",
+            components: {
+              text: "",
+              type: 'number',
+              items: ["The Engagement (The Blessing ofthe Ring)", "The Holy Matrimony (the Blessing of the Crown)"]
+            }
+          },
+          {
+            sectionName: "subHeading",
+            sectionType: "subHeading",
+            components: {
+              items: [],
+              isCenter: true,
+              isLeft: false,
+              isRight: false,
+              text: "The Blessing of the Rings"
+            }
+          },
+          {
+            sectionName: "text",
+            sectionType: "text",
+            components: {
+              items: [],
+              text: "The Chief celebrant blesses the rings, which are put on the fourth finger of the right hand one of the bride andt h e bridegroom on behalf of the Church. This is the Service of Betrothal. It calls the first detailed account of a wedding engagement in the Bible, in which Eleazor, commissioned byAbraham, placed ornaments on Rebecca as mark of her engagement for marriage to issac."
+            }
+          },
+          {
+            sectionName: "subHeading",
+            sectionType: "subHeading",
+            components: {
+              items: [],
+              isCenter: true,
+              isLeft: false,
+              isRight: false,
+              text: "The Blessing of the Crown"
+            }
+          },
+          {
+            sectionName: "text",
+            sectionType: "text",
+            components: {
+              items: [],
+              text: "Theblessing the Almighty is invoked onthe Bride and Bridegroom as King and Queen. It is symbolizes the bestowal of the crown of righteousness uponthe couple. The crown is the symbol of the cross, the sacrificial love, the righteousness and the sanctity in amarriage. A gold chain with a crosspendant is used for the crowning."
+            }
+          },
+          {
+            sectionName: "text",
+            sectionType: "text",
+            components: {
+              items: [],
+              text: "The most important part of the service is the reading of the Gospel. At that time the Bride and Bridegroom hold each other's right hand as a sign of being joined as one in Christ. The reading ofthe Gospel is symbolic wherein Christ affirms the sanctity of the marriage bond. This is followed by the tying of the `Minnu` with a small gold pendant shaped as a stylized heart with a cross symbol on it (Minnu) by the Groom around the neck of the Bride, and the adornment of the bridal attire (Manthrakodi). The Manthrakodi is placed on the head of the bride. This is the moment when the Bride becomes a member of the husband's family. To symbolize this event, a women from the family of the Bridegroom takes the place of the matron/maid of the honor as a gesture of welcome. The service concludes with an exhortation to the bride and groom, and a final benediction byt h e Chief celebrant."
+            }
+          },
+          {
+            sectionName: "subHeading",
+            sectionType: "subHeading",
+            components: {
+              items: [],
+              isCenter: true,
+              isLeft: false,
+              isRight: false,
+              text: "PART- I The Blessing of the Ring"
+            }
+          },
+          {
+            sectionName: "text",
+            sectionType: "text",
+            components: {
+              items: [],
+              text: "Dearly beloved in Christ, Christian marriage is instituted by God and therefor ti is holy and sacramental. You have come into the presence ofGod to be united in Holy Matrimony. The Lord has guided you until now and so you ought to remember His ways and praise His Holy name. You should confess your sins withyourheartandsoulbeforetheLord. fIyoutrulyrepent,Hewillforgiveyours sins."
+            }
+          },
+          {
+            sectionName: "text",
+            sectionType: "text",
+            components: {
+              items: [],
+              text: "This service would be more blessed and meaningful, fi you, thecongregation, takepart in ti with anexperience of forgiveness. Jesus Christ is the Bridegroom and the Church ist h e Bride. He loved the Church and gave Himself to her. W e remember this is the marriage service. Let us pray together for the grace of God, so that through their married life, you may enter into a new fellowship with the Lord May the Lord give you sufficient grace to lead a righteous Christian Family life until the very end."
+            }
+          },
+          {
+            sectionName: "subHeading",
+            sectionType: "subHeading",
+            components: {
+              items: [],
+              isCenter: false,
+              isLeft: true,
+              isRight: false,
+              text: "Choir"
+            }
+          },
+          {
+            sectionName: "subHeading",
+            sectionType: "subHeading",
+            components: {
+              items: [],
+              isCenter: true,
+              isLeft: false,
+              isRight: false,
+              text: "ആദ്യ വിവാഹനാളിൽ"
+            }
+          },
+          {
+            sectionName: "list",
+            sectionType: "list",
+            components: {
+              text: "",
+              type: 'none',
+              items: [
+                "ആദ്യ വിവാഹനാളിൽ ഏദനിൽ ധ്വനിച്ച ആ മംഗല്യാശീർവ്വാദം ഇന്നും കേൾക്കുന്നിതാ", 
+                "ക്രൈസ്തവ ദമ്പതിമാർ തമ്മിൽ ചേരുന്നേരം വിശുദ്ധനാം ത്രിയേകൻ തൻ കൃപ ചൊരിയും",
+                "രക്ഷകാ എഴുന്നുളളി യോജിപ്പിക്കിവരെ ദീർഘകാലം സന്തോഷം ചേർന്നു വസിച്ചീടാൻ",
+                "വിശുദ്ധാത്മാവേ, വന്നു ആശിർവദിക്ക നീ സ്വർഗ്ഗമണവാളന്നു മണവാട്ടിയെപ്പോൽ",
+                "ഇവർ തങ്ങൾ കിരീടം വെച്ചങ്ങു നിൻപാദെ ക്രിസ്ത്യൻ മണവാട്ടിയായ് സൗഭാഗ്യം ചേരട്ടെ"
+              ]
+            }
+          },
+          {
+            sectionName: "subHeading",
+            sectionType: "subHeading",
+            components: {
+              items: [],
+              isCenter: true,
+              isLeft: false,
+              isRight: false,
+              text: "ഒന്നാം ഭാഗം"
+            }
+          },
+          {
+            sectionName: "subHeading",
+            sectionType: "subHeading",
+            components: {
+              items: [],
+              isCenter: false,
+              isLeft: true,
+              isRight: false,
+              text: "മോതിരം വാഴ്വിന്റെ ശുശ്രൂഷ"
+            }
+          },
+          {
+            sectionName: "list",
+            sectionType: "list",
+            components: {
+              text: "",
+              items: [
+                "പട്ടക്കാരൻ : പിതാവിനും പുത്രനും പരിശുദ്ധറൂഹായ്ക്കും സ്‌തുതി",
+                "ജനം : ആദിമുതൽ എന്നന്നേക്കും തന്നെ ആമേൻ.",
+                "പട്ടക്കാരൻ : ആകാശവും ഭൂമിയും തൻ്റെ മഹത്വം കൊണ്ടു നിറ ഞ്ഞിരിക്കുന്ന ബലവാനായ ദൈവം തമ്പുരാൻ പരിശുദ്ധൻ - പരിശുദ്ധൻ പരിശുദ്ധൻ - ഉന്നതങ്ങളിൽ സ്‌തി",
+                "ജനം : കർത്താവിന്റെ തിരുനാമത്തിൽ വന്നവനും വരുവാനിരിക്കു ന്നവനും വാഴ്ത്തപ്പെട്ടവനാകുന്നു. ഉന്നതങ്ങളിൽ സ്തുതി.",
+                "പട്ടക്കാരൻ : *ദൈവമേ നീ പരിശുദ്ധനാകുനാകുന്നു.",
+                "ജനം : ബലവാനേ നീ പരിശുദ്ധനാകുന്നു.",
+                "പട്ടക്കാരൻ: മരണമില്ലാത്തവനേ, നീ പരിശുദ്ധനാകുന്നു.",
+                "ജനം : ഞങ്ങൾക്കുവേണ്ടി + ക്രൂശിക്കപ്പെട്ട മ്‌ശിഹാ തമ്പുരാനേ, ഞങ്ങളോട് കരുണ ചെയ്യേണമേ",
+                "പട്ടക്കാരൻ : ഞങ്ങളുടെ കർത്താവെ ഞങ്ങളോട് കരുണ ചെയ്യേണമേ.",
+                "ജനം : ഞങ്ങളുടെ കർത്താവെ കൃപ തോന്നി, ഞങ്ങളോട് കരുണ ചെയ്യേണമേ.",
+                "പട്ടക്കാരൻ : ഞങ്ങളുടെ കർത്താവെ, ഞങ്ങളുടെ നമസ്‌കാരവും ശുശ്രൂഷയും കൈക്കൊണ്ട്, ഞങ്ങളോട് കരുണ ചെയ്യേണമേ.",
+                "ജനം : ദൈവമേ നിനക്കു സ്തു‌തി",
+                "പട്ടക്കാരൻ : സ്രഷ്ടാവെ നിനക്കു സ്തുതി",
+                "ജനം : പാപികളായ അടിയാരോട് കൃപ ചെയ്യുന്ന മ്ശിഹാ രാജാവെ, നിനക്കു സ്‌തുതി, ബാറെക്മാർ"
+              ]
+            }
+          },
+          {
+            sectionName: "subHeading",
+            sectionType: "subHeading",
+            components: {
+              items: [],
+              isCenter: true,
+              isLeft: false,
+              isRight: false,
+              text: "കർത്താവിന്റെ പ്രാർത്ഥന"
+            }
+          },
+          {
+            sectionName: "text",
+            sectionType: "text",
+            components: {
+              text: "പട്ടക്കാരൻ : സ്വർഗ്ഗസ്ഥനായ ഞങ്ങളുടെ പിതാവെ.....",
+              items: []
+            }
+          },
+          {
+            sectionName: "text",
+            sectionType: "text",
+            components: {
+              text: "ജനം : നിന്റെ നാമം പരിശുദ്ധമാക്കപ്പെടേണമേ. നിന്റെ രാജ്യം വരേ ണമേ. നിന്റെ ഇഷ്‌ടം സ്വർഗ്ഗത്തിലെപ്പോലെ ഭൂമിയിലും ആകേണ മേ.ഞങ്ങൾക്ക് ആവശ്യമുള്ള ആഹാരം ഇന്നു ഞങ്ങൾക്ക് തരേണമേ. ഞങ്ങളുടെ കടക്കാരോട് ഞങ്ങൾ ക്ഷമിച്ചിരിക്കുന്നത് പോലെ-ഞങ്ങളുടെ കടങ്ങളും ദോഷങ്ങളും ഞങ്ങളോടും ക്ഷമിക്കേണമേ. ഞങ്ങളെ പരീക്ഷയിലേക്കു പ്രവേശിപ്പിക്കാതെ, ഞങ്ങളെ ദുഷ്‌ടനിൽ നിന്നും രക്ഷിച്ചു കൊള്ളേ ണമേ, എന്തുകൊണ്ടെന്നാൽ രാജ്യവും ശക്തിയും മഹത്വവും എന്നേക്കും നിനക്കുള്ളതാകുന്നു. ആമേൻ.",
+              items: []
+            }
+          },
+          {
+            sectionName: "text",
+            sectionType: "text",
+            components: {
+              text: "(Preliminary prayer beseeching God's Grace on all, specially the Bridegroom and Bride)",
+              items: []
+            }
+          },
+          {
+            sectionName: "subHeading",
+            sectionType: "subHeading",
+            components: {
+              items: [],
+              isCenter: true,
+              isLeft: false,
+              isRight: false,
+              text: "പ്രാരംഭ പ്രാർത്ഥന"
+            }
+          },
+          {
+            sectionName: "text",
+            sectionType: "text",
+            components: {
+              text: "പട്ടക്കാരൻ : ദൈവമായ കർത്താവേ, നിന്നോടു കൂടെയുള്ള അഴി വില്ലാത്ത സന്തോഷത്തിന് ഞങ്ങളെ യോഗ്യതയുള്ളവരാക്കേണമേ. നിന്നിൽ ഞങ്ങളുടെ സന്തോഷങ്ങളുടെ ആരംഭവും, ഞങ്ങളുടെ ആനന്ദത്തിൻ്റെ പരി പൂർത്തിയും ഞങ്ങൾക്കുണ്ടാകുമാറാകേണമേ. നിന്നിൽ ഞങ്ങളുടെ ദേഹി കളും ആത്മാക്കളും സന്തോഷിക്കുമാറാകേണമേ. നിൻ്റെ കരുണയാൽഞ ങ്ങളുടെ സങ്കടങ്ങൾ മാഞ്ഞുപോകയും, നിൻ്റെ അനുഗ്രഹത്താൽ ഞങ്ങളുടെ നന്മകൾ വർദ്ധിക്കുകയും ഞങ്ങളുടെ വാഴ്ത്തു‌കൾ സമൃദ്ധിയായിത്തീരുകയും, ഞങ്ങളുടെ മണവാളൻമാർ പൂർണ്ണതപ്പെടുകയും ഞങ്ങളുടെ മണവാട്ടിമാർ പരിപൂർണ്ണതപ്പെടുകയും ചെയ്യുമാറാകേണമേ. നിന്നോട് കൂടെയും, ആദിമു തൽ നിന്നെ പ്രസാദിപ്പിച്ചിട്ടുള്ള സകല പരിശുദ്ധൻമാരോടു കൂടെയും, മാഞ്ഞുപോകാത്ത ഭാഗ്യങ്ങളിലും നിൻ്റെ പരിശുദ്ധൻമാരുടെ കൂട്ടങ്ങളിലും നിൻ്റെ വത്സലൻമാരുടെ സംഘങ്ങളിലും ഞങ്ങൾ സന്തോഷിക്കുമാറാകേ ണമേ. പിതാവും പുത്രനും പരിശുദ്ധ റൂഹായുമായ ദൈവമേ, സ്തു‌തിയും സ്തോത്രവും നിനക്കു ഞങ്ങൾ കരേറ്റും ഹോശാ.....",
+              items: []
+            }
+          },
+          {
+            sectionName: "text",
+            sectionType: "text",
+            components: {
+              text: "ജനം : ആമേൻ",
+              items: []
+            }
+          },
+          {
+            sectionName: "subHeading",
+            sectionType: "subHeading",
+            components: {
+              items: [],
+              isCenter: true,
+              isLeft: false,
+              isRight: false,
+              text: "ഗീതം"
+            }
+          },
+          {
+            sectionName: "list",
+            sectionType: "list",
+            components: {
+              text: "",
+              type: "number",
+              items: [
+                "വാനോർ ഭൂവാസികളേയും - സന്തോഷിപ്പിച്ച", 
+                "ആനന്ദം അരുളിയ ദേവാ - എന്നേക്കും സ്തോത്രം", 
+                "കരുണാകരനാം മ്ശിഹായെ - തൽ സേവകരായ്", 
+                "തിരുമുൻ നിൽക്കും കൂട്ടത്തെ - സന്തോഷിപ്പിക്ക", 
+                "രക്ഷകാ! വലങ്കൈ നീട്ടി തിരുനാമത്തിൽ ഞങ്ങൾ",
+                "പക്ഷമായ് നൽകും മോതിരങ്ങൾ വാഴ്ത്തീടണമെ നീ",
+                "മോതിരത്താൽ സഭ മ്ശിഹായ്ക്കായ് - വേളിക്കായ് തീർന്നാൾ",
+                "തൻ തിരുമേനി തിരുരക്തം - കൈക്കൊണ്ടീടുന്നു",
+                "പിതൃ പുത്ര വിശുദ്ധാത്മാവാം - ത്രിയേകൻ വന്ദ്യൻ",
+                "വാനോർ ഭൂവാസികൾ വന്ദി-ച്ചാഘോഷിക്കുന്നു."
+              ]
+            }
+          },
+        ],
+      },
     },
     gallery: {
       buttonTextCTA: "Enjoy our memories",
@@ -428,11 +705,15 @@ export const cmsContent = {
         { src: "pg2.jpg", alt: "image1" },
         { src: "pg3.jpg", alt: "image1" },
         { src: "pg4.JPG", alt: "image1" },
+        {src: "bg-default.webp", alt: "image3"},
+        {src: "bgh.webp", alt: "image4"},
+        {src: "bgp.jpg", alt: "image5"},
       ],
     },
     invite: {
       InviteHeroSection: {
-        heroImage: "bg-default.jpg",
+        heroImage: "bg-default.webp",
+        storyheroImage: "bg-default.jpg",
         heroImageAlt: "Jithin & Ashley",
       },
       instagramFeed: {
@@ -654,7 +935,6 @@ export const cmsContent = {
       { headingTitle: "Our Story", source: "/story" },
       { headingTitle: "Venue", source: "/venue" },
       { headingTitle: "Gallery", source: "/gallery" },
-      { headingTitle: "Order Of Workship", source: "/order" },
     ],
   },
   modal: {
@@ -694,6 +974,24 @@ export const cmsContent = {
     {
       mainText: "Best Wishes",
       wisherName: "Pappa & Mummy",
+      wisherRole: "",
+      wisherRelation: "",
+    },
+    {
+      mainText: "Best Wishes",
+      wisherName: "Lizy Aunty",
+      wisherRole: "",
+      wisherRelation: "",
+    },
+    {
+      mainText: "Congratulations both of you on your marriage. May the bond you share today from stronger with each passing day... There will be hills and valleys , roses with throns, happiness, hardships and sorrows throughout life. In all those time, stay together and love, respect, honour and understand each other so that you can build a relationship that is unbreakable... Believe in God and his plans... May the good Lord Almighty always be with both of you...",
+      wisherName: "Kuttan uncle, Dhanya Chechi and Leon",
+      wisherRole: "",
+      wisherRelation: "",
+    },
+    {
+      mainText: "And now these three remain: faith, hope and love. But the greatest of these is Love.   1 Corinthians 13:13.    \n  As you walk together, may the Lord be the foundation of your marriage, guiding you in wisdon, sorrounding you with His peacem and showering you with his boundless blessings. May your love continue to flourish, brnging light and warmth to all around you. ",
+      wisherName: "Prasad Uncle and Gigi Aunty",
       wisherRole: "",
       wisherRelation: "",
     },
