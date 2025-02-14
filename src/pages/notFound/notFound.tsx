@@ -9,7 +9,7 @@ const NotFound = () => {
   }, []);
   return (
     <>
-      <div className="flex flex-col items-center min-h-[calc(100vh-44px)] justify-center bg-gray-100">
+      <div className="flex flex-col items-center min-h-[calc(110vh-44px)] justify-center bg-gray-100">
         <svg
           version="1.1"
           id="Layer_1"
