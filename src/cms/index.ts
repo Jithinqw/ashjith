@@ -862,7 +862,7 @@ export const cmsContent = {
     notFound: {
       mainHeading: "Hmmm....It seems you got lost.",
       subHeading:
-        '<span>If you are stuck, try going back <a href="/" class="underline text-black">home</a></span>',
+        '<span>We are celebrating life. Find your forever and celebrate your life too.</span>',
       goHomeCTA: "Go back home",
     },
     drm: {
