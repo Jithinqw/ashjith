@@ -712,7 +712,7 @@ export const cmsContent = {
     },
     invite: {
       InviteHeroSection: {
-        heroImage: "bg-default.webp",
+        heroImage: "bg-default.jpg",
         storyheroImage: "bg-default.jpg",
         heroImageAlt: "Jithin & Ashley",
       },
